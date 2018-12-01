@@ -1,0 +1,99 @@
+## HOST Servers from several rescources.  
+## Updated: 12/1/2018
+
+## SteveBlack | https://github.com/StevenBlack/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts
+
+## MalwareDomains
+https://mirror1.malwaredomains.com/files/justdomains
+
+## Cameleon
+http://sysctl.org/cameleon/hosts
+
+## Zeustracker
+https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
+
+## Disconnect.me Tracking
+https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+
+## Disconnect.me Ads
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+
+## Host-files.net | https://hosts-file.net/?s=classifications
+https://hosts-file.net/download/hosts.txt
+https://hosts-file.net/ad_servers.txt
+https://hosts-file.net/emd.txt
+https://hosts-file.net/exp.txt
+https://hosts-file.net/fsa.txt
+https://hosts-file.net/grm.txt
+https://hosts-file.net/hjk.txt
+https://hosts-file.net/mmt.txt
+
+## Abuse.ch | https://abuse.ch/
+https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
+https://zeustracker.abuse.ch/blocklist.php?download=baddomains
+https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
+
+## CryptoCoin Blocking
+https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
+https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/hosts
+
+## Adult Content | https://github.com/chadmayfield/my-pihole-blocklists | Not Required if running Family Shield
+#https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
+
+## Prigent
+https://v.firebog.net/hosts/Prigent-Ads.txt
+https://v.firebog.net/hosts/Prigent-Malware.txt
+https://v.firebog.net/hosts/Prigent-Phishing.txt
+
+## Disconnect Me
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+
+## Wally 3K | https://firebog.net/o
+
+## Wally 3k -- Suspicious Lists
+https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/KADhosts/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Spam/hosts
+https://v.firebog.net/hosts/static/w3kbl.txt
+
+## Wally 3k -- Advertising Lists
+https://adaway.org/hosts.txt
+https://v.firebog.net/hosts/AdguardDNS.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+https://hosts-file.net/ad_servers.txt
+https://v.firebog.net/hosts/Easylist.txt
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/UncheckyAds/hosts
+
+## Wally 3k -- Tracking & Telemetry Lists
+https://v.firebog.net/hosts/Easyprivacy.txt
+https://v.firebog.net/hosts/Prigent-Ads.txt
+https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.2o7Net/hosts
+https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
+https://v.firebog.net/hosts/Airelle-trc.txt
+
+## Wally 3k -- Malicious Lists
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+https://mirror1.malwaredomains.com/files/justdomains
+https://hosts-file.net/exp.txt
+https://hosts-file.net/emd.txt
+https://hosts-file.net/psh.txt
+https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
+https://www.malwaredomainlist.com/hostslist/hosts.txt
+https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
+https://v.firebog.net/hosts/Prigent-Malware.txt
+https://v.firebog.net/hosts/Prigent-Phishing.txt
+https://raw.githubusercontent.com/quidsup/notrack/master/malicious-sites.txt
+https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
+https://v.firebog.net/hosts/Shalla-mal.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Risk/hosts
+https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
+
+## Locally Generated EZ List
+http://pi.hole/adblock.txt
+
+## My Custom List
+https://pastebin.com/raw/pvis2kW9
