@@ -1,0 +1,20 @@
+# My locally generated Host File for blocking
+# Available at https://pastebin.com/raw/pvis2kW9
+
+#Website Comments
+127.0.0.1 spot.im
+127.0.0.1 disqus.com
+127.0.0.1 livefyre.com
+
+#Data Collectors & Advertisers
+127.0.0.1 bluekai.com
+127.0.0.1 openx.net
+
+#Malicious
+
+#Misc
+127.0.0.1 shopsavvy.com
+127.0.0.1 adnsx.com
+127.0.0.1 revcontent.com
+127.0.0.1 evidon.com
+127.0.0.1 unrulymedia.com
