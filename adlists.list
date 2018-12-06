@@ -93,7 +93,7 @@ https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Risk/hosts
 https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 
 ## Locally Generated EZ List
-http://pi.hole/adblock.txt
+#http://pi.hole/adblock.txt
 
 ## My Custom List
 https://raw.githubusercontent.com/OstrichBot/pihole/master/HOSTS
