@@ -19,7 +19,7 @@
 ## Top Abused TLDs
 ## https://www.spamhaus.org/statistics/tlds/
 ## https://krebsonsecurity.com/tag/top-20-shady-top-level-domains/
-\.+(xxx|gq|cf|tk|ga|ml|loan|men|date|click|cloud|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|wang|accountants|us)$
+\.+(xxx|gq|cf|tk|ga|ml|loan|men|date|click|cloud|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|wang|accountants)$
 
 ##  Blocking Select Countries
 ## https://en.wikipedia.org/wiki/Country_code_top-level_domain
