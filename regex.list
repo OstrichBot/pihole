@@ -23,4 +23,4 @@
 
 ##  Blocking Select Countries
 ## https://en.wikipedia.org/wiki/Country_code_top-level_domain
-\.+|(ru|cn|kp|ir|iq|il)$
+\.+(ru|cn|kp|ir|iq|il)$
