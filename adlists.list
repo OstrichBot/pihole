@@ -16,9 +16,6 @@ https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 ## Disconnect.me Tracking
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
 
-## Disconnect.me Ads
-https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-
 ## Host-files.net | https://hosts-file.net/?s=classifications
 https://hosts-file.net/download/hosts.txt
 https://hosts-file.net/ad_servers.txt
@@ -73,12 +70,10 @@ https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/
 https://v.firebog.net/hosts/Airelle-trc.txt
 
 ## Wally 3k -- Malicious Lists
-https://mirror1.malwaredomains.com/files/justdomains
 https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
 https://www.malwaredomainlist.com/hostslist/hosts.txt
 https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
 https://raw.githubusercontent.com/quidsup/notrack/master/malicious-sites.txt
-https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
 https://v.firebog.net/hosts/Shalla-mal.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Risk/hosts
 
