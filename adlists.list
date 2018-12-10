@@ -66,7 +66,6 @@ https://www.dshield.org/feeds/suspiciousdomains_Medium.txt
 https://www.dshield.org/feeds/suspiciousdomains_High.txt
 
 ## Wally 3K | https://firebog.net/o
-
 https://adaway.org/hosts.txt
 https://adblock.mahakala.is
 https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
@@ -102,9 +101,6 @@ https://www.joewein.net/dl/bl/dom-bl-base.txt
 https://www.malwaredomainlist.com/hostslist/hosts.txt
 https://www.squidblacklist.org/downloads/dg-ads.acl
 https://www.squidblacklist.org/downloads/dg-malicious.acl
-
-## Locally Generated EZ List
-#http://pi.hole/adblock.txt
 
 ## My Custom List
 https://raw.githubusercontent.com/OstrichBot/pihole/master/HOSTS
