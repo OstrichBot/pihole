@@ -1,5 +1,6 @@
-## HOST Servers from several rescources.  
-## Updated: 12/5/2018
+## HOST Servers for PiHole | https://pi-hole.net/
+## https://github.com/OstrichBot/pihole/edit/master/adlists.list
+## Updated: 12/9/2018
 
 ## SteveBlack | https://github.com/StevenBlack/hosts
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts
@@ -21,9 +22,6 @@ http://winhelp2002.mvps.org/hosts.txt
 
 ## someonewhocares.org
 https://someonewhocares.org/hosts/zero/hosts
-
-## squidblacklist.com
-https://www.squidblacklist.org/downloads/dg-malicious.acl
 
 ## Host-files.net | https://hosts-file.net/?s=classifications
 https://hosts-file.net/download/hosts.txt
@@ -105,6 +103,7 @@ https://v.firebog.net/hosts/static/w3kbl.txt
 https://www.joewein.net/dl/bl/dom-bl-base.txt
 https://www.malwaredomainlist.com/hostslist/hosts.txt
 https://www.squidblacklist.org/downloads/dg-ads.acl
+https://www.squidblacklist.org/downloads/dg-malicious.acl
 
 ## Locally Generated EZ List
 #http://pi.hole/adblock.txt
