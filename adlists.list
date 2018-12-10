@@ -16,6 +16,15 @@ https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 ## Disconnect.me Tracking
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
 
+## mvps.org
+http://winhelp2002.mvps.org/hosts.txt
+
+## someonewhocares.org
+https://someonewhocares.org/hosts/zero/hosts
+
+## squidblacklist.com
+https://www.squidblacklist.org/downloads/dg-malicious.acl
+
 ## Host-files.net | https://hosts-file.net/?s=classifications
 https://hosts-file.net/download/hosts.txt
 https://hosts-file.net/ad_servers.txt
@@ -25,15 +34,21 @@ https://hosts-file.net/fsa.txt
 https://hosts-file.net/grm.txt
 https://hosts-file.net/hjk.txt
 https://hosts-file.net/mmt.txt
+https://hosts-file.net/psh.txt
 
 ## Abuse.ch | https://abuse.ch/
 https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
+https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt
+https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt
+https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt
+https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt
 https://zeustracker.abuse.ch/blocklist.php?download=baddomains
 https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
 
 ## CryptoCoin Blocking
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
 https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/hosts
+https://zerodot1.gitlab.io/CoinBlockerLists/hosts
 
 ## Adult Content | https://github.com/chadmayfield/my-pihole-blocklists | Not Required if running Family Shield
 #https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
@@ -47,38 +62,53 @@ https://v.firebog.net/hosts/Prigent-Phishing.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
 
+## dshield.org
+https://www.dshield.org/feeds/suspiciousdomains_Low.txt
+https://www.dshield.org/feeds/suspiciousdomains_Medium.txt
+https://www.dshield.org/feeds/suspiciousdomains_High.txt
+
 ## Wally 3K | https://firebog.net/o
 
-## Wally 3k -- Suspicious Lists
-https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/KADhosts/hosts
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Spam/hosts
-https://v.firebog.net/hosts/static/w3kbl.txt
-
-## Wally 3k -- Advertising Lists
 https://adaway.org/hosts.txt
-https://v.firebog.net/hosts/AdguardDNS.txt
-https://v.firebog.net/hosts/Easylist.txt
+https://adblock.mahakala.is
+https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
+https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
+https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
+https://hostsfile.mine.nu/hosts0.txt
+https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/UncheckyAds/hosts
-
-## Wally 3k -- Tracking & Telemetry Lists
-https://v.firebog.net/hosts/Easyprivacy.txt
+https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
+https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
+https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt
+https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/url-lists.txt
+https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
+https://raw.githubusercontent.com/quidsup/notrack/master/malicious-sites.txt
 https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.2o7Net/hosts
-https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
-https://v.firebog.net/hosts/Airelle-trc.txt
-
-## Wally 3k -- Malicious Lists
-https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
-https://www.malwaredomainlist.com/hostslist/hosts.txt
-https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
-https://raw.githubusercontent.com/quidsup/notrack/master/malicious-sites.txt
-https://v.firebog.net/hosts/Shalla-mal.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Risk/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/add.Spam/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/KADhosts/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/UncheckyAds/hosts
+https://raw.githubusercontent.com/vokins/yhosts/master/hosts
+https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts
+https://v.firebog.net/hosts/AdguardDNS.txt
+https://v.firebog.net/hosts/Airelle-hrsk.txt
+https://v.firebog.net/hosts/Airelle-trc.txt
+https://v.firebog.net/hosts/BillStearns.txt
+https://v.firebog.net/hosts/Easylist.txt
+https://v.firebog.net/hosts/Easyprivacy.txt
+https://v.firebog.net/hosts/Kowabit.txt
+https://v.firebog.net/hosts/Shalla-mal.txt
+https://v.firebog.net/hosts/static/w3kbl.txt
+https://www.joewein.net/dl/bl/dom-bl-base.txt
+https://www.malwaredomainlist.com/hostslist/hosts.txt
+https://www.squidblacklist.org/downloads/dg-ads.acl
 
 ## Locally Generated EZ List
 #http://pi.hole/adblock.txt
 
 ## My Custom List
 https://raw.githubusercontent.com/OstrichBot/pihole/master/HOSTS
+oooo
