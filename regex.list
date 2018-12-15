@@ -16,6 +16,9 @@
 ^track(ers?|ing)?[0-9]*[-.]
 ^traff(ic)?[-.]
 
+## Blocking Comment Sites
+\.+(spot.im|disqus.com|livefyre.com)$
+
 ## Top Abused TLDs
 ## https://www.spamhaus.org/statistics/tlds/
 ## https://krebsonsecurity.com/tag/top-20-shady-top-level-domains/
