@@ -1,10 +1,5 @@
 # My locally generated Host File for blocking
-# Available at https://pastebin.com/raw/pvis2kW9
-
-#Website Comments
-127.0.0.1 spot.im
-127.0.0.1 disqus.com
-127.0.0.1 livefyre.com
+# Available at https://github.com/OstrichBot/pihole/edit/master/HOSTS
 
 #Data Collectors & Advertisers
 127.0.0.1 bluekai.com
