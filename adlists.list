@@ -49,7 +49,7 @@ https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/hosts
 https://zerodot1.gitlab.io/CoinBlockerLists/hosts
 
 ## Adult Content | https://github.com/chadmayfield/my-pihole-blocklists | Not Required if running Family Shield
-#https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
+https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
 
 ## Prigent
 https://v.firebog.net/hosts/Prigent-Ads.txt
