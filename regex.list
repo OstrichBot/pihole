@@ -74,3 +74,7 @@
 
 ### Gambling
 ^.*(bet(ting|s)|baccarat|bingo|blackjack|casino|craps|lott(ery|o)|gam(e[rs]|ing|bl(e|ing))|roulette|sweepstake|poker).*$
+
+### Crypto Crap
+^(.*[\.\-])*(coin[s]*|crypto).*$
+^.*(coin[s]*|crypto)[\.\-].*$
