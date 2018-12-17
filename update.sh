@@ -25,11 +25,11 @@ wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/piho
 
 # Restart DNS for regex filters
 pihole restartdns
-sleep 2
+sleep 4
 
 # Enable PiHole
 pihole enable
-sleep 2
+sleep 4
 
 # Gravity
 pihole updateGravity
