@@ -1,7 +1,7 @@
 # pihole
 Online Repository of Pihole Files. Citations to authors provided in line.
 
-[![commit activity]](https://github.com/OstrichBot/pihole/commits/master)
+[![commit activity]].(https://github.com/OstrichBot/pihole/commits/master)
 
 ### Licence
 ```
