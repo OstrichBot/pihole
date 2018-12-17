@@ -12,9 +12,6 @@ if [ "$(id -u)" != "0" ] ; then
 	exit 2
 fi
 
-# Stop PiHole
-pihole disable
-
 # Remove Old Files
 rm /etc/pihole/regex.list
 rm /etc/pihole/adlists.list
@@ -25,11 +22,7 @@ wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/piho
 
 # Restart DNS for regex filters
 pihole restartdns
-sleep 4
-
-# Enable PiHole
-pihole enable
-sleep 4
+sleep 5
 
 # Gravity
 pihole updateGravity
