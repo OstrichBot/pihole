@@ -89,5 +89,22 @@ https://www.malwaredomainlist.com/hostslist/hosts.txt
 https://www.squidblacklist.org/downloads/dg-ads.acl
 https://www.squidblacklist.org/downloads/dg-malicious.acl
 
+## https://www.reddit.com/r/pihole/comments/9g2i2g/phishing_protection_comparing_dns_security_filters/e64z7ji/
+https://dnsbl.karelvanhecke.com/openphish_30d.txt
+https://dnsbl.karelvanhecke.com/phishtank.txt
+
+## Block List Project https://tspprs.com/
+https://tspprs.com/dl/abuse
+https://tspprs.com/dl/ads
+https://tspprs.com/dl/crypto
+https://tspprs.com/dl/drugs
+https://tspprs.com/dl/malware
+https://tspprs.com/dl/phishing
+https://tspprs.com/dl/porn
+https://tspprs.com/dl/proxy
+https://tspprs.com/dl/ransomware
+https://tspprs.com/dl/spam
+https://tspprs.com/dl/torrent
+
 ## My Custom List
 https://raw.githubusercontent.com/OstrichBot/pihole/master/HOSTS
