@@ -36,3 +36,8 @@
 ^traff(ic)?[-.]
 
 #### Ref: https://github.com/cbuijs/accomplist/blob/master/chris/regex.black
+
+### Crypto Crap
+^(.*[\.\-])*(coin[s]*|crypto).*$
+^.*(coin[s]*|crypto)[\.\-].*$
+^myetherwallet\.
