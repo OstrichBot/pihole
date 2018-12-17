@@ -14,3 +14,6 @@ wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/piho
 
 # Restart DNS for regex filters
 pihole restartdns
+
+# Enable PiHole
+pihole enable
