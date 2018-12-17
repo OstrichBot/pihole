@@ -1,6 +1,9 @@
 #!/bin/bash
 # curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | bash
 
+# Set Tick Art
+TICK="[\e[32m ✔ \e[0m]"
+
 # Advise User what we are doing
 echo -e " \e[1m This script will download adlists.list & regex.list from the repo \e[0m"
 sleep 1
