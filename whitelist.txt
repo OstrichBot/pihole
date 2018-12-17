@@ -1,0 +1,1 @@
+img.purch.com   #required for Tomshardware.com to work
