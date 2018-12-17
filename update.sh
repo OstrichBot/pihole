@@ -28,6 +28,7 @@ rm /etc/pihole/adlists.list
 echo -e " $[...] \e[32m Downloading Files... \e[0m"
 wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list
 wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/pihole/master/regex.list
+echo -e " ${TICK} \e[32m Downloading Files... \e[0m"
 
 # Restart DNS for regex filters
 echo -e " ${TICK} \e[32m Restarting DNS... \e[0m"
