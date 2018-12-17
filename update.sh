@@ -21,13 +21,14 @@ sleep 0.5
 
 # Download New Files
 echo -e " [...] \e[32m Downloading new files... \e[0m"
-wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list
-wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/pihole/master/regex.list
+wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list >/dev/null 2>&1
+wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/pihole/master/regex.list >/dev/null 2>&1
 wait
 echo -e " ${TICK} \e[32m Download Complete \e[0m"
 
 # Restart DNS for regex filters
-pihole restartdns
+echo -e " [...] \e[32m Restarting PiHole... \e[0m"
+pihole restartdns > /dev/null
 sleep 5
 
 # Gravity
