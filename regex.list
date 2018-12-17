@@ -66,9 +66,6 @@
 ^(.*\.)*(o0bc|2mdn|2o7|302br|51yes|adtech([-]*[a-z]+)*|amazon[-]*adsystem|atwola|bkrtx|bluekai|chartbeat|crwdcntrl|d(e|o)mdex|effectivemeasure|falkag|fwmrm|gemius)\.
 ^(.*\.)*(hit(box|tail)|hotjar|imrworldwide|intellitxt|lijit|mixpanel|ms[-]*adcenter|netklix|outbrain|petrovka|pixel|syndicat(e|ion)|rubiconproject|sitemeter|skimresources|smaato|smartadserver|(fast|stat)counter|suprnova|taboola|tradedouble[r]*|xiti|usergrid|visualrevenue|volumetrk)\.
 
-### IDN
-[^\.]*xn--[^\.]*
-
 ### Porn
 ^.*(adult|(adult|ana[a]*l|blowjob|bondage|cam|dildo|date|fetish|free|(hard|soft)core|hentai|hot|live|mature|phone|teen)[-]*(fuck|porn[o]*|se(ks|x))|eroti(c|k|sich)|fuck|gangbang|(hard|soft)core|hentai|neuk|nsfw|piem[eo]l|porn[o]*|se(ks|x)[-]*(cam|chat|dat(e|ing)|movie|shop|show|tour|toy|tracker|video)[sz]*[0-9]*|sluts|tieten|xxx).*$
 ^(adult|hentai|porn[o]*|se(ks|x(e|o|y)))\..*$
