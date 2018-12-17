@@ -54,3 +54,11 @@
 ^(.*\.)*(atdmt|beget|bango|casalemedia|clickbank|extreme[-]*dm|flurry|krxd|liveadvert|moatads|mookie[1-9]*|nuggad|omtrdc|p2l|quant(count|s[e]*rv[e]*)|onestat|onthe|pop(cash|check|test|under|up)|revsci|scorecardresearch|sitestat|tacoda|tynt)\.
 ^(.*\.)*(o0bc|2mdn|2o7|302br|51yes|adtech([-]*[a-z]+)*|amazon[-]*adsystem|atwola|bkrtx|bluekai|chartbeat|crwdcntrl|d(e|o)mdex|effectivemeasure|falkag|fwmrm|gemius)\.
 ^(.*\.)*(hit(box|tail)|hotjar|imrworldwide|intellitxt|lijit|mixpanel|ms[-]*adcenter|netklix|outbrain|petrovka|pixel|syndicat(e|ion)|rubiconproject|sitemeter|skimresources|smaato|smartadserver|(fast|stat)counter|suprnova|taboola|tradedouble[r]*|xiti|usergrid|visualrevenue|volumetrk)\.
+
+### Common Tracking/Stats labels
+^(.*[\.\-])*(affiliate|([s]*anal|local)[iy](s[iy]s|ti[ck])|click|clk|cooki(e|ex)|cnt|coun(t[y]*|t[e]*[dr])|creative|datacollect|hit|(amp|[s]*)metr[iy][ck]|open[-]*(ad|x)|partner|ping|pixel|sta(t|tisti[ck])|tag|(web|[uv]*)stat)[sz]*[0-9]*[\.\-]
+^(.*[\.\-])*(telemetr[iy]|(evil|[s]*)tra[ck](k|king|ker)|[s]*trk|utm|video[-]*stat)[sz]*[0-9]*[\.\-]
+
+### Common wellknown start labels
+^(creatives|gcirm[0-9]*|marketing|oa(s|scentral[a-z]*)|o(x|x-d)|prom(o|otion)|qwe|.*servedby|syndicat(e|ion)|traffic)[\.\-]
+^[a-z]\.([0-9]+|ad[^d]|click|count)
