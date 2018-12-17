@@ -1,5 +1,6 @@
 # pihole
-Online Repository of Pihole Files
+Online Repository of Pihole Files. 
+Citations to authors provided in line.
 
 ### Licence
 ```
