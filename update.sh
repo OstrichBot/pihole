@@ -2,6 +2,9 @@
 # curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | bash
 TICK="[\e[32m ✔ \e[0m]"
 
+# Wipe the Screen
+clear
+
 # Advise User what we are doing
 echo -e " \e[1m This script will download adlists.list & regex.list from the repo \e[0m"
 sleep 1
@@ -27,7 +30,7 @@ wait
 echo -e " ${TICK} \e[32m Download Complete \e[0m"
 
 # Restart DNS for regex filters
-echo -e " [...] \e[32m Restarting PiHole... \e[0m"
+echo -e " ${TICK} \e[32m Restarting PiHole... \e[0m"
 pihole restartdns > /dev/null
 sleep 5
 
@@ -37,3 +40,4 @@ pihole -g > /dev/null
 wait
 echo -e " ${TICK} \e[32m Pi-hole's gravity updated \e[0m"
 echo -e " ${TICK} \e[32m Done! \e[0m"
+echo -e "\n\n"
