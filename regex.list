@@ -37,11 +37,6 @@
 
 #### Ref: https://github.com/cbuijs/accomplist/blob/master/chris/regex.black
 
-### Common file-extension TLD's - Partly covered by tlds.black file!!!
-^(.*\.)*(do[ct]|p[op][ast]|pub|sld|vsd|x[lp][as])[ablmstx]{0,1}$
-^(.*\.)*(csv|gz|pdf|tar|t[e]*xt|zip)$
-^(.*\.)*(bat|cmd|dll|exe)$
-
 ### Private - Partly covered by tlds.black file!!!
 ^(.*\.)*(broadcasthost|company|cor(p|porate)|example|home|host|invalid|la[bn]|local|localdomain|localhost|localnet|nxdomain|office|rejected|router|test|url|workgroup|wpad)$
 ^(.*\.)*(10|127|(16|17|18|19|20|21|22|23|24|25|26|27|28|29|31)\.172|254\.169|168\.192)\.in-addr\.arpa$
@@ -65,11 +60,3 @@
 ^(.*\.)*(atdmt|beget|bango|casalemedia|clickbank|extreme[-]*dm|flurry|krxd|liveadvert|moatads|mookie[1-9]*|nuggad|omtrdc|p2l|quant(count|s[e]*rv[e]*)|onestat|onthe|pop(cash|check|test|under|up)|revsci|scorecardresearch|sitestat|tacoda|tynt)\.
 ^(.*\.)*(o0bc|2mdn|2o7|302br|51yes|adtech([-]*[a-z]+)*|amazon[-]*adsystem|atwola|bkrtx|bluekai|chartbeat|crwdcntrl|d(e|o)mdex|effectivemeasure|falkag|fwmrm|gemius)\.
 ^(.*\.)*(hit(box|tail)|hotjar|imrworldwide|intellitxt|lijit|mixpanel|ms[-]*adcenter|netklix|outbrain|petrovka|pixel|syndicat(e|ion)|rubiconproject|sitemeter|skimresources|smaato|smartadserver|(fast|stat)counter|suprnova|taboola|tradedouble[r]*|xiti|usergrid|visualrevenue|volumetrk)\.
-
-### Porn
-^.*(adult|(adult|ana[a]*l|blowjob|bondage|cam|dildo|date|fetish|free|(hard|soft)core|hentai|hot|live|mature|phone|teen)[-]*(fuck|porn[o]*|se(ks|x))|eroti(c|k|sich)|fuck|gangbang|(hard|soft)core|hentai|neuk|nsfw|piem[eo]l|porn[o]*|se(ks|x)[-]*(cam|chat|dat(e|ing)|movie|shop|show|tour|toy|tracker|video)[sz]*[0-9]*|sluts|tieten|xxx).*$
-^(adult|hentai|porn[o]*|se(ks|x(e|o|y)))\..*$
-^(.*\.)*geil[a-z\-]*\..*$
-
-### Gambling
-^.*(bet(ting|s)|baccarat|bingo|blackjack|casino|craps|lott(ery|o)|gam(e[rs]|ing|bl(e|ing))|roulette|sweepstake|poker).*$
