@@ -16,18 +16,44 @@ if [ "$(id -u)" != "0" ] ; then
 	exit 2
 fi
 
+# Check which gawk
+if ! (which gawk > /dev/null); then
+  echo -e " [...] \e[32m Installing gawk... \e[0m"
+  if (which apt-get > /dev/null); then
+       apt-get install gawk -qq > /dev/null
+  elif (which pacman > /dev/null); then
+       pacman -Sqy gawk > /dev/null
+  elif (which dnf > /dev/null); then
+       dnf install gawk > /dev/null
+  fi
+  wait
+  echo -e " ${TICK} \e[32m Finished \e[0m"
+fi
+
 # Remove Old Files
+echo -e " ${TICK} \e[32m Removing Files... \e[0m"
 rm /etc/pihole/regex.list
 rm /etc/pihole/adlists.list
-echo -e " ${TICK} \e[32m Removing Files... \e[0m"
 sleep 0.5
 
-# Download New Files
-echo -e " [...] \e[32m Downloading new files... \e[0m"
+#Adlists.list
+echo -e " ${TICK} \e[32m Downloading adlists.list... \e[0m"
 wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list > /dev/null 2>&1
+wait
+
+#Regex.list
+echo -e " ${TICK} \e[32m Downloading regex.list... \e[0m"
 wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/pihole/master/regex.list > /dev/null 2>&1
 wait
-echo -e " ${TICK} \e[32m Download Complete \e[0m"
+
+# White Lists
+echo -e " ${TICK} \e[32m Updating Whitelists... \e[0m"
+curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
+curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
+wait
+echo -e " ${TICK} \e[32m Removing Whitelist duplicates... \e[0m"
+sudo gawk -i inplace '!a[$0]++' /etc/pihole/whitelist.txt
+wait
 
 # Restart DNS for regex filters
 echo -e " ${TICK} \e[32m Restarting PiHole... \e[0m"
