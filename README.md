@@ -1,13 +1,13 @@
 # pihole
 Online Repository of Pihole Files.
 
-## Update your PiHole
+### Update your PiHole
 [Piping to bash can be Dangerous!](https://pi-hole.net/2016/07/25/curling-and-piping-to-bash/)
 ```
 curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | bash
 ```
 
-## References
+### References
 ```
 https://github.com/mmotti/pihole-regex
 https://github.com/anudeepND/whitelist
