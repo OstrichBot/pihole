@@ -1,7 +1,7 @@
 # pihole
 Online Repository of Pihole Files. Citations to authors provided in line.
 
-##curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | bash
+## curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | bash
 
 ### Licence
 ```
