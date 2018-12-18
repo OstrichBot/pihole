@@ -6,7 +6,7 @@ TICK="[\e[32m ✔ \e[0m]"
 clear
 
 # Advise User what we are doing
-echo -e " \e[1m This script will download adlists.list & regex.list from the repo \e[0m"
+echo -e " \e[1m This script will update adlists.list, regex.list and whitelist.txt from the repos \e[0m"
 sleep 1
 echo -e "\n"
 
@@ -36,17 +36,17 @@ rm /etc/pihole/regex.list
 rm /etc/pihole/adlists.list
 sleep 0.5
 
-#Adlists.list
+# adlists.list
 echo -e " ${TICK} \e[32m Downloading adlists.list... \e[0m"
 wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list > /dev/null 2>&1
 wait
 
-#Regex.list
+# regex.list
 echo -e " ${TICK} \e[32m Downloading regex.list... \e[0m"
 wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/pihole/master/regex.list > /dev/null 2>&1
 wait
 
-# White Lists
+# whitelist.txt
 echo -e " ${TICK} \e[32m Updating Whitelists... \e[0m"
 curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
@@ -55,15 +55,15 @@ echo -e " ${TICK} \e[32m Removing Whitelist duplicates... \e[0m"
 sudo gawk -i inplace '!a[$0]++' /etc/pihole/whitelist.txt
 wait
 
-# Restart DNS for regex filters
+# Restart DNS 
 echo -e " ${TICK} \e[32m Restarting PiHole... \e[0m"
 pihole restartdns > /dev/null
 sleep 5
 
-# Gravity
+# Update Gravity
 echo -e " [...] \e[32m Pi-hole gravity rebuilding lists. This may take a while... \e[0m"
 pihole -g > /dev/null
 wait
-echo -e " ${TICK} \e[32m Pi-hole's gravity updated \e[0m"
+echo -e " ${TICK} \e[32m Pi-hole's gravity updated. \e[0m"
 echo -e " ${TICK} \e[32m Done! \e[0m"
 echo -e "\n\n"
