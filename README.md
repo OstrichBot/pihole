@@ -4,8 +4,8 @@ Online Repository of Pihole Files.
 ## Update your PiHole
 ```
 curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | bash
-> there is risky
 ```
+> there is risky
 
 ## References
 ```
