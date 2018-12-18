@@ -2,7 +2,9 @@
 Online Repository of Pihole Files. Citations to authors provided in line.
 
 ### Update your PiHole
+```
 curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | bash
+```
 
 ### Licence
 ```
