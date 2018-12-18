@@ -6,13 +6,14 @@ TICK="[\e[32m ✔ \e[0m]"
 clear
 
 # Advise User what we are doing
-echo -e " \e[1m This script will update adlists.list, regex.list and whitelist.txt from the repos \e[0m"
+echo -e " \e[1m This script will update PiHole files from the repos \e[0m"
 sleep 1
 echo -e "\n"
 
 # Check for Root
 if [ "$(id -u)" != "0" ] ; then
 	echo "This script requires root permissions. Please run this as root!"
+	echo "CAUTION: Read through the script before doing so!"
 	exit 2
 fi
 
