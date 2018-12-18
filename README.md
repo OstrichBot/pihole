@@ -15,10 +15,8 @@ https://github.com/mmotti/pihole-gravity-optimise (not implemented)
 https://github.com/cbuijs/accomplist/tree/master/chris (not implemented)
 ```
 
-### Licence 
+### MIT License 
 ```
-MIT License
-
 Copyright (c) 2018 OstrichBot <Ostrichbot@th3v01d.net>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
