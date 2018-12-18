@@ -11,7 +11,7 @@ curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh |
 <https://github.com/mmotti/pihole-gravity-optimise> (not implemented currently)
 <https://github.com/cbuijs/accomplist/tree/master/chris> (good read, but lots of false positives)
 
-### Licence
+### Licence 
 ```
 MIT License
 
