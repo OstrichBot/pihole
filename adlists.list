@@ -2,25 +2,21 @@
 ## Source: https://github.com/OstrichBot/pihole/edit/master/adlists.list
 ## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 ## Updated: 12/17/2018
-## Blocking: 1,129,117 unique hosts
+## Blocking: 1,146,436 unique hosts (3,276,422 total -- major overlap)
 
-## SteveBlack | https://github.com/StevenBlack/hosts
-## 78.2k
+## SteveBlack | https://github.com/StevenBlack/hosts | 78k domains
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts
 
-## MalwareDomains
-## 26.8k
+## MalwareDomains | 26k domains
 https://mirror1.malwaredomains.com/files/justdomains
 
-## Cameleon
-## 20k
+## Cameleon | 20k domains
 http://sysctl.org/cameleon/hosts
-
-## Zeustracker
-https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 
 ## Disconnect.me Tracking
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
 
 ## mvps.org
 ## 14.1k domains
@@ -48,18 +44,19 @@ https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt
 https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt
 https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt
 https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt
+https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 https://zeustracker.abuse.ch/blocklist.php?download=baddomains
 https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
 
-## Prigent
+## FireBog Hosted | https://firebog.net/
 https://v.firebog.net/hosts/Prigent-Ads.txt
 https://v.firebog.net/hosts/Prigent-Malware.txt
 https://v.firebog.net/hosts/Prigent-Phishing.txt
-
-## Disconnect Me
-## 5.5k domains
-https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+https://v.firebog.net/hosts/AdguardDNS.txt
+https://v.firebog.net/hosts/Easylist.txt
+https://v.firebog.net/hosts/Easyprivacy.txt
+https://v.firebog.net/hosts/Shalla-mal.txt
+https://v.firebog.net/hosts/static/w3kbl.txt
 
 ## dshield.org
 ## 21.6k domains
@@ -72,25 +69,21 @@ https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
 https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/hosts
 https://zerodot1.gitlab.io/CoinBlockerLists/hosts
 
-## Adult Content | https://github.com/chadmayfield/my-pihole-blocklists | Not Required if running Family Shield
-https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
-
 ## Squidblacklist
 ## 99k domains
 https://www.squidblacklist.org/downloads/dg-ads.acl
 https://www.squidblacklist.org/downloads/dg-malicious.acl
 
-## https://www.reddit.com/r/pihole/comments/9g2i2g/phishing_protection_comparing_dns_security_filters/e64z7ji/
-## OpenFish & Phishtank
+## OpenFish & Phishtank | https://www.reddit.com/r/pihole/comments/9g2i2g/phishing_protection_comparing_dns_security_filters/e64z7ji/
 ## 15k domains
 https://dnsbl.karelvanhecke.com/openphish_30d.txt
 https://dnsbl.karelvanhecke.com/phishtank.txt
 
-## https://github.com/anudeepND/blacklist
+## anudeepND | https://github.com/anudeepND/blacklist
 https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
 https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt
 
-## Wally 3K | https://firebog.net/o
+## Wally 3K | https://firebog.net/
 ## Deleted References to sites captured in Steven-Blacks
 https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
@@ -98,14 +91,9 @@ https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
 https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
 https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
 https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts
-https://v.firebog.net/hosts/AdguardDNS.txt
-https://v.firebog.net/hosts/Easylist.txt
-https://v.firebog.net/hosts/Easyprivacy.txt
-https://v.firebog.net/hosts/Shalla-mal.txt
-https://v.firebog.net/hosts/static/w3kbl.txt
 https://www.malwaredomainlist.com/hostslist/hosts.txt
 
-## Block List Project https://tspprs.com/
+## Block List Project | https://tspprs.com/
 ## This site looked abandoned. But I'll keep pulling for awhile
 ## 807k domains
 https://tspprs.com/dl/abuse
@@ -117,6 +105,9 @@ https://tspprs.com/dl/proxy
 https://tspprs.com/dl/ransomware
 https://tspprs.com/dl/spam
 https://tspprs.com/dl/torrent
+
+## Adult Content | https://github.com/chadmayfield/my-pihole-blocklists | Not Required if running Family Shield
+https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
 
 ## My Custom List
 https://raw.githubusercontent.com/OstrichBot/pihole/master/HOSTS
