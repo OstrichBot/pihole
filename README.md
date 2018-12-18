@@ -7,7 +7,7 @@ curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh |
 ```
 ### References
 ```
-https://github.com/mmotti/pihole-regex
+(https://github.com/mmotti/pihole-regex)
 https://github.com/anudeepND/whitelist
 https://github.com/mmotti/pihole-gravity-optimise (not implemented currently)
 https://github.com/cbuijs/accomplist/tree/master/chris (good read, but lots of false positives)
