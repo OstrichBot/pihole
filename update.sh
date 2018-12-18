@@ -13,7 +13,9 @@ echo -e "\n"
 # Check for Root
 if [ "$(id -u)" != "0" ] ; then
 	echo "This script requires root permissions. Please run this as root!"
+	echo -e "\n"
 	echo "CAUTION: Read through the script before doing so!"
+	echo -e "\n\n"
 	exit 2
 fi
 
