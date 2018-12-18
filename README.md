@@ -5,7 +5,7 @@ Online Repository of Pihole Files.
 ```
 curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | bash
 ```
-> https://pi-hole.net/2016/07/25/curling-and-piping-to-bash/
+> [piping to bash can be dangerous](https://pi-hole.net/2016/07/25/curling-and-piping-to-bash/)
 
 ## References
 ```
