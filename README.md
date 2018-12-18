@@ -1,18 +1,15 @@
 # pihole
 Online Repository of Pihole Files. Citations to authors provided in line.
 
-### Update your PiHole
+## Update your PiHole
 ```
 curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | bash
 ```
-### References
+## References
 <https://github.com/mmotti/pihole-regex>
-```
-
 <https://github.com/anudeepND/whitelist>
 <https://github.com/mmotti/pihole-gravity-optimise> (not implemented currently)
 <https://github.com/cbuijs/accomplist/tree/master/chris> (good read, but lots of false positives)
-```
 
 ### Licence
 ```
