@@ -3,8 +3,6 @@
 ## Avaliable at https://github.com/OstrichBot/pihole/edit/master/regex.list
 ## Updated 16DEC2018
 
-#### My Settings
-
 ## Blocking Comment Sites
 \.+(spot.im|disqus.com|livefyre.com)$
 
@@ -17,8 +15,7 @@
 ## https://krebsonsecurity.com/tag/top-20-shady-top-level-domains/
 \.+(top|xxx|gq|cf|tk|ga|ml|loan|men|date|click|cloud|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|wang|accountants)$
 
-#### Ref: https://github.com/mmotti/pihole-regex
-
+## Mmotti | Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??ad[sxv]?[0-9]*[-_.]
 ^adim(age|g)s?[0-9]*[-_.]
 ^adse?rv(e(rs?)?|ices?)?[0-9]*[-.]
