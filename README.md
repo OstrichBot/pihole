@@ -1,5 +1,5 @@
 # pihole
-Online Repository of Pihole Files. Citations to authors provided in line.
+Online Repository of Pihole Files.
 
 ## Update your PiHole
 ```
