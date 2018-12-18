@@ -1,15 +1,19 @@
-## HOST Servers for PiHole | https://pi-hole.net/
-## https://github.com/OstrichBot/pihole/edit/master/adlists.list
+## HOST Servers for PiHole -- https://pi-hole.net/
+## Source: https://github.com/OstrichBot/pihole/edit/master/adlists.list
+## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 ## Updated: 12/17/2018
 ## Blocking: 1,129,117 unique hosts
 
 ## SteveBlack | https://github.com/StevenBlack/hosts
+## 78.2k
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts
 
 ## MalwareDomains
+## 26.8k
 https://mirror1.malwaredomains.com/files/justdomains
 
 ## Cameleon
+## 20k
 http://sysctl.org/cameleon/hosts
 
 ## Zeustracker
@@ -19,9 +23,11 @@ https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
 
 ## mvps.org
+## 14.1k domains
 http://winhelp2002.mvps.org/hosts.txt
 
 ## Host-files.net | https://hosts-file.net/?s=classifications
+## 2m domains
 https://hosts-file.net/download/hosts.txt
 https://hosts-file.net/ad_servers.txt
 https://hosts-file.net/emd.txt
@@ -30,9 +36,13 @@ https://hosts-file.net/fsa.txt
 https://hosts-file.net/grm.txt
 https://hosts-file.net/hjk.txt
 https://hosts-file.net/mmt.txt
+https://hosts-file.net/pha.txt
 https://hosts-file.net/psh.txt
+https://hosts-file.net/pup.txt
+https://hosts-file.net/wrz.txt
 
 ## Abuse.ch | https://abuse.ch/
+## 3.1k
 https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
 https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt
 https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt
@@ -47,10 +57,12 @@ https://v.firebog.net/hosts/Prigent-Malware.txt
 https://v.firebog.net/hosts/Prigent-Phishing.txt
 
 ## Disconnect Me
+## 5.5k domains
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
 
 ## dshield.org
+## 21.6k domains
 https://www.dshield.org/feeds/suspiciousdomains_Low.txt
 https://www.dshield.org/feeds/suspiciousdomains_Medium.txt
 https://www.dshield.org/feeds/suspiciousdomains_High.txt
@@ -64,11 +76,13 @@ https://zerodot1.gitlab.io/CoinBlockerLists/hosts
 https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
 
 ## Squidblacklist
+## 99k domains
 https://www.squidblacklist.org/downloads/dg-ads.acl
 https://www.squidblacklist.org/downloads/dg-malicious.acl
 
 ## https://www.reddit.com/r/pihole/comments/9g2i2g/phishing_protection_comparing_dns_security_filters/e64z7ji/
 ## OpenFish & Phishtank
+## 15k domains
 https://dnsbl.karelvanhecke.com/openphish_30d.txt
 https://dnsbl.karelvanhecke.com/phishtank.txt
 
@@ -93,6 +107,7 @@ https://www.malwaredomainlist.com/hostslist/hosts.txt
 
 ## Block List Project https://tspprs.com/
 ## This site looked abandoned. But I'll keep pulling for awhile
+## 807k domains
 https://tspprs.com/dl/abuse
 https://tspprs.com/dl/ads
 https://tspprs.com/dl/crypto
