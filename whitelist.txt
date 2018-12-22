@@ -1,4 +1,9 @@
-img.purch.com   #required for Tomshardware.com to work
+## Testing
+img.purch.com                     #required for Tomshardware.com to work
+mas-ssr-ad.amazon.com             #required for amazon store on Kindle Fire Tables
+kinesis.us-east-1.amazonaws.com   #
+
+## Approved
 id.google.com
 googleapis.l.google.com
 google-analytics.com
