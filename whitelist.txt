@@ -6,6 +6,10 @@ mas-ssr-ad.amazon.com
 kinesis.us-east-1.amazonaws.com
 device-metrics-us.amazon.com
 
+## Apple
+itunes.apple.com
+appleid.apple.com
+
 ## Google
 id.google.com
 googleapis.l.google.com
@@ -60,15 +64,13 @@ dl.dropboxusercontent.com
 ns1.dropbox.com
 ns2.dropbox.com
 
-## Approved
+## Misc
 events.gfe.nvidia.com
 s1.wp.com
 feedly.com
 spclient.wg.spotify.com
 gravatar.com
 widget-cdn.rpxnow.com
-itunes.apple.com
-appleid.apple.com
 app-analytics.snapchat.com
 sc-analytics.appspot.com
 cf-st.sc-cdn.net
