@@ -5,6 +5,10 @@ img.purch.com
 mas-ssr-ad.amazon.com             
 kinesis.us-east-1.amazonaws.com
 device-metrics-us.amazon.com
+mas-ext.amazon.com
+mas-sdk.amazon.com
+mas-ssr.amazon.com
+fls-na.amazon.com
 
 ## Apple
 itunes.apple.com
