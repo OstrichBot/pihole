@@ -1,22 +1,23 @@
-## Testing
-img.purch.com                     #required for Tomshardware.com to work
-mas-ssr-ad.amazon.com             #required for amazon store on Kindle Fire Tables
-kinesis.us-east-1.amazonaws.com   #
+## Toms Hardware
+img.purch.com
 
-## Approved
+## Amazon Services
+mas-ssr-ad.amazon.com             
+kinesis.us-east-1.amazonaws.com
+device-metrics-us.amazon.com
+
+## Google
 id.google.com
 googleapis.l.google.com
 google-analytics.com
-device-metrics-us.amazon.com
-events.gfe.nvidia.com
-s1.wp.com
-feedly.com
 googleapis.l.google.com
 clients4.google.com
 clients3.google.com
 clients2.google.com
 android.clients.google.com
-spclient.wg.spotify.com
+dl.google.com
+
+## MS Products
 outlook.office365.com
 products.office.com
 c.s-microsoft.com
@@ -25,6 +26,8 @@ login.live.com
 dl.delivery.mp.microsoft.com
 geo-prod.do.dsp.mp.microsoft.com
 displaycatalog.mp.microsoft.com
+
+## Plex
 plex.tv
 tvdb2.plex.tv
 pubsub.plex.bz
@@ -49,15 +52,22 @@ app.plex.tv
 o1.email.plex.tv
 o2.sg0.plex.tv
 dashboard.plex.tv
-gravatar.com
 thetvdb.com
 themoviedb.com
+
+## Dropbox
 dl.dropboxusercontent.com
 ns1.dropbox.com
 ns2.dropbox.com
+
+## Approved
+events.gfe.nvidia.com
+s1.wp.com
+feedly.com
+spclient.wg.spotify.com
+gravatar.com
 widget-cdn.rpxnow.com
 itunes.apple.com
-dl.google.com
 appleid.apple.com
 app-analytics.snapchat.com
 sc-analytics.appspot.com
