@@ -82,6 +82,7 @@ https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
 
 ## Adult Content | https://github.com/chadmayfield/my-pihole-blocklists
 https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
+#https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list
 
 ## crazy-max | https://github.com/crazy-max/WindowsSpyBlocker | Windows Telemetry?
 https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
