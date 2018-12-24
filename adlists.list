@@ -1,7 +1,7 @@
 ## PiHole | https://pi-hole.net/ | /etc/pihole/adlists.list
 ## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 ## Source: https://github.com/OstrichBot/pihole/edit/master/adlists.list
-## Updated: 12/17/2018
+## Updated: 12/24/2018
 ## Blocking: 1.1m unique hosts (3.3m total -- major overlap)
 
 ## SteveBlack | https://github.com/StevenBlack/hosts | 78k domains
