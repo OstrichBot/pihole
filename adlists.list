@@ -21,19 +21,6 @@ https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
 
-## Host-files.net | https://hosts-file.net/?s=classifications | 2m domains (major overlap)
-https://hosts-file.net/ad_servers.txt
-https://hosts-file.net/emd.txt 
-https://hosts-file.net/exp.txt
-https://hosts-file.net/fsa.txt
-https://hosts-file.net/grm.txt
-https://hosts-file.net/hjk.txt
-https://hosts-file.net/mmt.txt
-https://hosts-file.net/pha.txt
-https://hosts-file.net/psh.txt
-https://hosts-file.net/pup.txt
-https://hosts-file.net/wrz.txt
-
 ## Abuse.ch | https://abuse.ch/ | 3k domains
 https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
 https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt
@@ -98,6 +85,20 @@ https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d
 https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
 https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts
 https://www.malwaredomainlist.com/hostslist/hosts.txt
+
+## Host-files.net | https://hosts-file.net/?s=classifications | 2m domains (major overlap)
+## Uncomment to increase gravity.list size
+#https://hosts-file.net/ad_servers.txt
+#https://hosts-file.net/emd.txt 
+#https://hosts-file.net/exp.txt
+#https://hosts-file.net/fsa.txt
+#https://hosts-file.net/grm.txt
+#https://hosts-file.net/hjk.txt
+#https://hosts-file.net/mmt.txt
+#https://hosts-file.net/pha.txt
+#https://hosts-file.net/psh.txt
+#https://hosts-file.net/pup.txt
+#https://hosts-file.net/wrz.txt
 
 ## My Custom List
 https://raw.githubusercontent.com/OstrichBot/pihole/master/HOSTS
