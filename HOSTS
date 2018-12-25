@@ -2,17 +2,17 @@
 # Available at https://github.com/OstrichBot/pihole/edit/master/HOSTS
 
 #Data Collectors & Advertisers
-127.0.0.1 bluekai.com
-127.0.0.1 openx.net
+0.0.0.0 bluekai.com
+0.0.0.0 openx.net
 
 #Malicious
 
 #Misc
-127.0.0.1 shopsavvy.com
-127.0.0.1 adnsx.com
-127.0.0.1 revcontent.com
-127.0.0.1 evidon.com
-127.0.0.1 unrulymedia.com
+0.0.0.0 shopsavvy.com
+0.0.0.0 adnsx.com
+0.0.0.0 revcontent.com
+0.0.0.0 evidon.com
+0.0.0.0 unrulymedia.com
 
 # OpenDNS block pages caused trust/cert issues
-block.opendns.com
+0.0.0.0 block.opendns.com
