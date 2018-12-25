@@ -14,5 +14,5 @@
 127.0.0.1 evidon.com
 127.0.0.1 unrulymedia.com
 
-# Send this to 0.0.0.0 to prevent certificate issues
+# OpenDNS block pages caused trust/cert issues
 block.opendns.com
