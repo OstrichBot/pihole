@@ -7,7 +7,7 @@
 \.+(spot.im|disqus.com|livefyre.com)$
 
 ## White Listing TLDs
-## Reject domains that don't match
+## Reject TLDs that don't match
 ^(?!.*(com|net|org|us|co|edu|mil|gov|biz|info|xyz|ly)$)
 
 ##  Blocking Select Countries
