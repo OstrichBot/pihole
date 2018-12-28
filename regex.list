@@ -10,15 +10,6 @@
 ## Reject TLDs that don't match
 ^(?!.*(com|net|org|us|co|edu|mil|gov|biz|info|xyz|ly)$)
 
-##  Blocking Select Countries
-##  https://en.wikipedia.org/wiki/Country_code_top-level_domain
-\.+(ru|cn|kp|ir|iq|il)$
-
-## Top Abused TLDs
-## https://www.spamhaus.org/statistics/tlds/
-## https://krebsonsecurity.com/tag/top-20-shady-top-level-domains/
-\.+(top|xxx|gq|cf|tk|ga|ml|loan|men|date|click|cloud|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|wang|accountants)$
-
 ## Mmotti | Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??ad[sxv]?[0-9]*[-_.]
 ^adim(age|g)s?[0-9]*[-_.]
