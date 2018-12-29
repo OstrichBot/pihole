@@ -1,20 +1,17 @@
 #!/bin/bash
-# Based on: 
-# 	https://github.com/anudeepND/whitelist
-# 	https://github.com/mmotti/pihole-gravity-optimise
-#
+# Credits: 	https://github.com/anudeepND/whitelist & https://github.com/mmotti/pihole-gravity-optimise
 # License: 	https://github.com/OstrichBot/pihole/blob/master/LICENSE
 # Source:	https://raw.githubusercontent.com/OstrichBot/pihole/master/update_pihole.sh
 # Updated: 	29DEC2018
-# Reason:	Development & clean-up	
 
 # Set file variables
 file_gravity="/etc/pihole/gravity.list"
 dir_wildcards="/etc/dnsmasq.d"
 file_regex="/etc/pihole/regex.list"
 
-# Define a check mark
+# Set variables for echo
 TICK="[\e[32m✔\e[0m]"
+CROSS="[\e[31mX\e[0m]"
 
 # https://github.com/mmotti/pihole-gravity-optimise/blob/master/gravityOptimise.sh
 # Function Code for regex reduction of gravity.list
@@ -129,13 +126,11 @@ wait
 echo -e "  [o]\e[32m Removing gravity entries covered by regex. \e[0m\e[31m This may take a while... \e[0m"
 process_regex
 
-# Provide stats on block lists
+# Provide stats at the end
 echo -en "  [i]\e[32m whitelist.txt entries: \e[0m"
 more /etc/pihole/whitelist.txt | grep -v "#" | wc -l
 echo -en "  [i]\e[32m gravity.list entries: \e[0m"
 more /etc/pihole/gravity.list | grep -v "#" | wc -l
-echo -en "  [i]\e[32m regex.list entries: \e[0m"
-more /etc/pihole/regex.list | grep -v "#" | wc -l
 
 # Display PiHsedole status
 pihole status
