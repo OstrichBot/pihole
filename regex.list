@@ -6,7 +6,7 @@
 ## White Listing TLDs
 ## http://www.seobythesea.com/2006/01/googles-most-popular-and-least-popular-top-level-domains/
 ## Reject TLDs that dont match
-\.+(?!(com|net|org|us|edu|mil|gov))$
+\.+(?!(com|net|org|us|edu|mil|gov|io|im))$
 
 ## Blocking Comment Sites
 \.+(spot.im|disqus.com|livefyre.com)$
