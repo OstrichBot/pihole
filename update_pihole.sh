@@ -75,11 +75,11 @@ wait
 
 # Provide stats on block lists
 echo -en "  [i]\e[32m whitelist.txt entries: \e[0m"
-more /etc/pihole/whitelist.txt | sort -u | wc -l
+more /etc/pihole/whitelist.txt | grep -v "#" | wc -l
 echo -en "  [i]\e[32m gravity.list entries: \e[0m"
-more /etc/pihole/gravity.list | sort -u | wc -l
+more /etc/pihole/gravity.list | grep -v "#" | wc -l
 echo -en "  [i]\e[32m regex.list entries: \e[0m"
-more /etc/pihole/regex.list | sort -u | wc -l
+more /etc/pihole/regex.list | grep -v "#" | wc -l
 
 # Display PiHsedole status
 pihole status
