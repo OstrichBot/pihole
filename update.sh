@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -l
 # Based on: https://github.com/anudeepND/whitelist
 # Original License: https://github.com/anudeepND/whitelist/blob/master/LICENSE
 # License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
@@ -69,7 +69,6 @@ wait
 # This will update gravity.list
 #echo -e "  [o]\e[32m Checking for Pi-Hole Updates... \e[0m"
 pihole updatePihole
-echo -e "  ${TICK}\e[32m Pi-hole is updated. \e[0m"
 
 # Restart DNS 
 pihole restartdns
@@ -78,8 +77,7 @@ pihole restartdns
 echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
 pihole -g > /dev/null
 wait
-echo -e "  ${TICK}\e[32m Pi-hole's gravity updated. \e[0m"
-echo -e "\n"
+ooecho -e "\n"
 
 # Display PiHole status
 pihole status
