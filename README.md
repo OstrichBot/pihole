@@ -13,7 +13,7 @@ EOF
 ```
 https://github.com/mmotti/pihole-regex
 https://github.com/anudeepND/whitelist
-https://github.com/mmotti/pihole-gravity-optimise (not implemented)
+https://github.com/mmotti/pihole-gravity-optimise
 ```
 
 ### MIT License 
