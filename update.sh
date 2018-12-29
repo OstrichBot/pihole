@@ -74,6 +74,14 @@ echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take
 pihole -g > /dev/null
 wait
 
-# Display PiHole status
+# Provide stats on block lists
+echo -en "  ${TICK}\e[32m gravity.list blocking: \e[0m"
+more /etc/pihole/gravity.list | sort -u | wc -l
+echo -en "  ${TICK}\e[32m regex.list blocking: \e[0m"
+more /etc/pihole/regex.list | sort -u | wc -l
+
+# Display PiHsedole status
 pihole status
+
+
 echo -e "  ${TICK}\e[32m Done! \e[0m\n"
