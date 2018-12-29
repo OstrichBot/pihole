@@ -126,6 +126,10 @@ echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take
 pihole -g > /dev/null
 wait
 
+# Enable PiHole Blocking
+echo -e "  ${TICK}\e[32m Enabling Pi-Hole... \e[0m"
+pihole enable
+
 # Reduce gravity.list by removing regex coverage
 echo -e "  [o]\e[32m Removing gravity entries covered by regex. \e[0m\e[31m This may take a while... \e[0m"
 process_regex
@@ -135,9 +139,6 @@ echo -en "  [i]\e[32m whitelist.txt entries: \e[0m"
 more /etc/pihole/whitelist.txt | grep -v "#" | wc -l
 echo -en "  [i]\e[32m gravity.list entries: \e[0m"
 more /etc/pihole/gravity.list | grep -v "#" | wc -l
-
-# Enable PiHole Blocking
-pihole enable
 
 # Display PiHsedole status
 pihole status
