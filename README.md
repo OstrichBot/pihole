@@ -1,5 +1,5 @@
 # pihole
-Online Repository of Pihole Files.
+Online Repository of Pihole Files. Desgined to centralize list management and ensure single command updates to Pi-Holes.
 
 #### Installation
 ```
