@@ -13,8 +13,8 @@ TICK="[\e[32m✔\e[0m]"
 clear
 
 # Advise User what we are doing
-echo " \e[1m This script will update PiHole files from the repos at: \e[0m"
-echo " \e[1m     https://github.com/OstrichBot/pihole\e[0m\n"
+echo -e " \e[1m This script will update PiHole files from the repos at: \e[0m"
+echo -e " \e[1m     https://github.com/OstrichBot/pihole\e[0m\n"
 
 # Check for Root
 if [ "$(id -u)" != "0" ] ; then
@@ -25,7 +25,7 @@ fi
 
 # Check which gawk
 if ! (which gawk > /dev/null); then
-  echo " [...] \e[32m Installing gawk... \e[0m"
+  echo -e " [...] \e[32m Installing gawk... \e[0m"
   if (which apt-get > /dev/null); then
        apt-get install gawk -qq > /dev/null
   elif (which pacman > /dev/null); then
@@ -34,31 +34,31 @@ if ! (which gawk > /dev/null); then
        dnf install gawk > /dev/null
   fi
   wait
-  echo " ${TICK}\e[32m Finished \e[0m"
+  echo -e " ${TICK}\e[32m Finished \e[0m"
 fi
 
 # Remove Old Files
-echo "  ${TICK}\e[32m Removing Files... \e[0m"
+echo -e "  ${TICK}\e[32m Removing Files... \e[0m"
 rm /etc/pihole/regex.list
 rm /etc/pihole/adlists.list
 wait
 
 # adlists.list
-echo "  ${TICK}\e[32m Downloading adlists.list... \e[0m"
+echo -e "  ${TICK}\e[32m Downloading adlists.list... \e[0m"
 wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list > /dev/null 2>&1
 wait
 
 # regex.list
-echo "  ${TICK}\e[32m Downloading regex.list... \e[0m"
+echo -e "  ${TICK}\e[32m Downloading regex.list... \e[0m"
 wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/pihole/master/regex.list > /dev/null 2>&1
 wait
 
 # whitelist.txt
-echo "  ${TICK}\e[32m Updating Whitelists... \e[0m"
+echo -e "  ${TICK}\e[32m Updating Whitelists... \e[0m"
 curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 wait
-echo "  ${TICK}\e[32m Removing Whitelist duplicates... \e[0m\n"
+echo -e "  ${TICK}\e[32m Removing Whitelist duplicates... \e[0m\n"
 sudo gawk -i inplace '!a[$0]++' /etc/pihole/whitelist.txt
 wait
 
@@ -70,10 +70,10 @@ pihole updatePihole
 pihole restartdns
 
 # Update Gravity
-echo "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
+echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
 pihole -g > /dev/null
 wait
 
 # Display PiHole status
 pihole status
-echo "  ${TICK}\e[32m Done! \e[0m\n"
+echo -e "  ${TICK}\e[32m Done! \e[0m\n"
