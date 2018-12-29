@@ -1,6 +1,6 @@
 #!/bin/bash
 # curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | bash
-TICK="[\e[32m ✔ \e[0m]"
+TICK="[\e[32m✔\e[0m]"
 
 # Wipe the Screen
 clear
@@ -74,7 +74,7 @@ pihole -g > /dev/null
 wait
 echo -e " ${TICK} \e[32m Pi-hole's gravity updated. \e[0m"
 echo -e " ${TICK} \e[32m Done! \e[0m"
-echo -e "\n\n"
+echo -e "\n"
 
 # Display PiHole status
 pihole status
