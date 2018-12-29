@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/sh
 # Based on: https://github.com/anudeepND/whitelist
 # Original License: https://github.com/anudeepND/whitelist/blob/master/LICENSE
 # License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
@@ -15,9 +15,6 @@ clear
 # Advise User what we are doing
 echo -e " \e[1m This script will update PiHole files from the repos at: \e[0m"
 echo -e " \e[1m     https://github.com/OstrichBot/pihole\e[0m"
-
-sleep 1
-echo -e "\n"
 
 # Check for Root
 if [ "$(id -u)" != "0" ] ; then
@@ -67,17 +64,16 @@ wait
 
 # Update pihole
 # This will update gravity.list
-#echo -e "  [o]\e[32m Checking for Pi-Hole Updates... \e[0m"
 pihole updatePihole
 
 # Restart DNS 
 pihole restartdns
 
 # Update Gravity
-echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m\n"
+echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
 pihole -g > /dev/null
 wait
 
 # Display PiHole status
 pihole status
-echo -e "  ${TICK}\e[32m Done! \e[0m\n"
+echo -e "\n  ${TICK}\e[32m Done! \e[0m\n"
