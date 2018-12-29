@@ -118,9 +118,6 @@ wait
 # This will update gravity.list
 pihole updatePihole
 
-# Restart DNS 
-pihole restartdns
-
 # Update Gravity
 echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
 pihole -g > /dev/null
@@ -140,6 +137,6 @@ more /etc/pihole/whitelist.txt | grep -v "#" | wc -l
 echo -en "  [i]\e[32m gravity.list entries: \e[0m"
 more /etc/pihole/gravity.list | grep -v "#" | wc -l
 
-# Display PiHsedole status
+# Display Pi-Hole status
 pihole status
 echo -e "  ${TICK}\e[32m Done! \e[0m\n"
