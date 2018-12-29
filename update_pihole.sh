@@ -5,8 +5,62 @@
 # Source: https://github.com/OstrichBot/pihole/edit/master/update.sh
 # Updated: 29DEC2018 Reason: clean up
 
+# Set file variables
+file_gravity="/etc/pihole/gravity.list"
+dir_wildcards="/etc/dnsmasq.d"
+file_regex="/etc/pihole/regex.list"
+
 # Define a check mark
 TICK="[\e[32m✔\e[0m]"
+
+# https://github.com/mmotti/pihole-gravity-optimise/blob/master/gravityOptimise.sh
+process_regex ()
+{
+	echo "#### Regex Removals ####"
+
+	# Check gravity.list is not empty
+	if [ ! -s $file_gravity ]; then
+			echo "--> gravity.list is empty or does not exist"
+			return 1
+	fi
+
+	# Count gravity entries
+	count_gravity=$(wc -l < $file_gravity)
+
+	# Only read it if it exists and is not empty
+	if [ -s $file_regex ]; then
+		regexList=$(grep '^[^#]' $file_regex)
+	else
+		echo "--> Regex list is empty or does not exist."
+		return 1
+	fi
+
+	# Status update
+	echo "--> $(wc -l <<< "$regexList") regexps found"
+
+	# Invert match regex patterns against gravity.list
+	echo "--> Identifying unnecessary domains"
+
+	new_gravity=$(grep -vEf <(echo "$regexList") $file_gravity)
+
+	# If there are no domains after regex removals
+	if [ -z "$new_gravity" ]; then
+		echo "--> No unnecessary domains were found"
+		return 0
+	fi
+
+	# Status update
+	echo "--> $(($count_gravity-$(wc -l <<< "$new_gravity"))) unnecessary hosts identified"
+
+	# Output file
+	echo "--> Outputting $file_gravity"
+	echo "$new_gravity" | sudo tee $file_gravity > /dev/null
+
+	# Status update
+	echo "--> $(wc -l < $file_gravity) domains in gravity.list"
+
+	return 0
+}
 
 # Wipe the Screen
 clear
@@ -72,6 +126,10 @@ pihole restartdns
 echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
 pihole -g > /dev/null
 wait
+
+# Reduce gravity.list by removing regex coverage
+echo -e "  [o]\e[32m Removing gravity entries covered by regex. \e[0m\e[31m This may take a while... \e[0m"
+process_regex
 
 # Provide stats on block lists
 echo -en "  [i]\e[32m whitelist.txt entries: \e[0m"
