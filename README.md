@@ -3,10 +3,10 @@ Online Repository of Pihole Files.
 
 #### Installation
 ```
-sudo bash
+sudo -s -- <<EOF
 wget -qO /usr/local/bin/update_pihole.sh https://raw.githubusercontent.com/OstrichBot/pihole/master/update_pihole.sh
 chmod +x /usr/local/bin/update_pihole.sh
-exit
+EOF
 ```
 
 ### References
