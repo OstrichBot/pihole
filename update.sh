@@ -58,7 +58,7 @@ wait
 
 # Update pihole
 # This will update gravity.list
-echo -e " ${...} \e[32m Chekcing for PiHole Updates... \e[0m"
+echo -e " $[...] \e[32m Chekcing for PiHole Updates... \e[0m"
 pihole updatePihole > /dev/null
 wait
 echo -e " ${TICK} \e[32m Done... \e[0m"
