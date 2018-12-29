@@ -1,6 +1,14 @@
 # pihole
 Online Repository of Pihole Files.
 
+#### Installation
+```
+sudo bash
+wget -qO /usr/local/bin/update_pihole.sh https://raw.githubusercontent.com/OstrichBot/pihole/master/update_pihole.sh
+chmod +x /usr/local/bin/update_pihole
+exit
+```
+
 ### References
 ```
 https://github.com/mmotti/pihole-regex
