@@ -3,8 +3,8 @@
 # 	https://github.com/anudeepND/whitelist
 # 	https://github.com/mmotti/pihole-gravity-optimise
 #
-# License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
-# Source: https://github.com/OstrichBot/pihole/edit/master/update.sh
+# License: 	https://github.com/OstrichBot/pihole/blob/master/LICENSE
+# Source:	https://raw.githubusercontent.com/OstrichBot/pihole/master/update_pihole.sh
 # Updated: 	29DEC2018
 # Reason:	Development & clean-up	
 
