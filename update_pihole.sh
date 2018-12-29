@@ -17,11 +17,12 @@ file_regex="/etc/pihole/regex.list"
 TICK="[\e[32m✔\e[0m]"
 
 # https://github.com/mmotti/pihole-gravity-optimise/blob/master/gravityOptimise.sh
+# Function Code for regex reduction of gravity.list
 process_regex ()
 {
 	# Check gravity.list is not empty
 	if [ ! -s $file_gravity ]; then
-			echo -e "  [i]\e[32m gravity.list is empty or does not exist\e[0m"
+			echo -e "  [\e[31mX\e[0m]\e[32m gravity.list is empty or does not exist\e[0m"
 			return 1
 	fi
 
@@ -32,34 +33,30 @@ process_regex ()
 	if [ -s $file_regex ]; then
 		regexList=$(grep '^[^#]' $file_regex)
 	else
-		echo -e "  [i]\e[32m Regex list is empty or does not exist.\e[0m"
+		echo -e "  [\e[31mX\e[0m]\e[32m Regex list is empty or does not exist.\e[0m"
 		return 1
 	fi
 
 	# Status update
-	echo "--> $(wc -l <<< "$regexList") regexps found"
+	echo -e "  [i]\e[32m$(wc -l <<< "$regexList") regexps found"
 
 	# Invert match regex patterns against gravity.list
 	echo -e "  [i]\e[32m Identifying unnecessary domains.\e[0m"
-
 	new_gravity=$(grep -vEf <(echo "$regexList") $file_gravity)
 
 	# If there are no domains after regex removals
 	if [ -z "$new_gravity" ]; then
-		echo -e "  [i]\e[32m No unnecessary domains were found\e[0m"
+		echo -e "  [\e[31mX\e[0m]\e[32m No unnecessary domains were found\e[0m"
 		return 0
 	fi
 
 	# Status update
-	echo -e "  [i]\e[32m $(($count_gravity-$(wc -l <<< "$new_gravity"))) unnecessary hosts identified\e[0m"
+	echo -e "  [i]\e[32m gravity.list contains $(($count_gravity-$(wc -l <<< "$new_gravity"))) unnecessary hosts\e[0m"
 
 	# Output file
-	echo -e "  [i]\e[32m Outputting $file_gravity\e[0m"
+	echo -e "  [i]\e[32m Updating $file_gravity\e[0m"
 	echo "$new_gravity" | sudo tee $file_gravity > /dev/null
-
-	# Status update
-	echo -e "  ${TICK}\e[32m Regex redution complete...\e[0m"
-
+	
 	return 0
 }
 
