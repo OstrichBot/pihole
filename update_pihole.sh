@@ -38,7 +38,7 @@ process_regex ()
 	fi
 
 	# Status update
-	echo -e "  [i]\e[32m$(wc -l <<< "$regexList") regexps found"
+	echo -e "  [i] \e[0m$(wc -l <<< "$regexList") \e[32mregexps found.\e[0m"
 
 	# Invert match regex patterns against gravity.list
 	echo -e "  [i]\e[32m Identifying unnecessary domains.\e[0m"
@@ -51,7 +51,7 @@ process_regex ()
 	fi
 
 	# Status update
-	echo -e "  [i]\e[32m gravity.list contains $(($count_gravity-$(wc -l <<< "$new_gravity"))) unnecessary hosts\e[0m"
+	echo -e "  [i]\e[32m gravity.list contains \e[0m$(($count_gravity-$(wc -l <<< "$new_gravity"))) \e[32munnecessary hosts\e[0m"
 
 	# Output file
 	echo -e "  [i]\e[32m Updating $file_gravity\e[0m"
