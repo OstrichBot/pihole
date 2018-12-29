@@ -58,7 +58,7 @@ process_regex ()
 	echo "$new_gravity" | sudo tee $file_gravity > /dev/null
 
 	# Status update
-	echo -e "  [i]\e[32m $(wc -l < $file_gravity) domains in gravity.list\e[0m"
+	echo -e "  ${TICK}\e[32m Regex redution complete...\e[0m"
 
 	return 0
 }
