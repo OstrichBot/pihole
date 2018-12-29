@@ -74,7 +74,7 @@ pihole updatePihole
 pihole restartdns
 
 # Update Gravity
-echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. This may take a while... \e[0m"
+echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
 pihole -g > /dev/null
 wait
 echo -e "  ${TICK}\e[32m Pi-hole's gravity updated. \e[0m"
