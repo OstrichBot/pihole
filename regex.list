@@ -4,21 +4,6 @@
 ## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 ## Updated: 29DEC2018
 
-## Testing Section
-^metrics?[-.]
-
-## Block Top Shady TLDs
-^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|info|top|tv)$
-
-## Block other TLDs
-^.*(xyz|club|online|support|asia)
-
-## Block Countries
-^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm)
-
-## Block Redirectors
-^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
-
 ## Mmotti's List| Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??[m]?ad[sxv]?[0-9]*[-_.]
 ^adim(age|g)s?[0-9]*[-_.]
@@ -30,11 +15,24 @@
 ^banners?[-.]
 ^beacons?[0-9]*[-.]
 ^count(ers?)?[0-9]*[-.]
+^metrics?[-.]
 ^pixels?[-.]
 ^stat(s|istics)?[0-9]*[-.]o
 ^telemetry[-.]
 ^track(ers?|ing)?[0-9]*[-.]
 ^traff(ic)?[-.]
+
+## Block Countries
+^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm)
+
+## Block Top Shady TLDs
+^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|info|top|tv)$
+
+## Block other TLDs
+^.*(xyz|club|online|support|asia)
+
+## Block Redirectors
+^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
 
 ## Block Comment Sites, Facebook, Twitter
 ^.*(spot.im|disqus.com|livefyre.com|postmatic.com|metype.com)$
