@@ -5,7 +5,7 @@
 ## Updated: 29DEC2018
 
 ## WhiteListing TLDs by using BlackLists (AKA Reject TLDs that dont match)
-\.+(?!(com|net|org|us|edu|mil|gov|io|im))$
+.*[^(com|net|org|us|edu|mil|gov|io|im)]$
 
 ## Testing Section
 ^metrics?[-.]
