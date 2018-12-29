@@ -5,6 +5,7 @@ Online Repository of Pihole Files.
 [Piping to bash can be Dangerous!](https://pi-hole.net/2016/07/25/curling-and-piping-to-bash/)
 ```
 sudo sh -c "$(curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh)"
+curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh | sudo bash
 ```
 
 ### References
