@@ -60,9 +60,6 @@ process_regex ()
 # Wipe the Screen
 clear
 
-# Disable PiHole Blocking
-pihole disable
-
 # Advise User what we are doing
 echo -e " \e[1m This script will update PiHole files from the repos at: \e[0m"
 echo -e " \e[1m     https://github.com/OstrichBot/pihole\e[0m\n"
@@ -87,6 +84,10 @@ if ! (which gawk > /dev/null); then
   wait
   echo -e " ${TICK}\e[32m Finished \e[0m"
 fi
+
+# Disable PiHole Blocking
+echo -e "  ${TICK}\e[32m Disabling Pi-Hole to ensure clean downloads... \e[0m"
+pihole disable
 
 # Remove Old Files
 echo -e "  ${TICK}\e[32m Removing Files... \e[0m"
