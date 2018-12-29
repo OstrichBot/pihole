@@ -35,7 +35,7 @@ process_regex ()
 	fi
 
 	# Status update
-	echo -e "  [i] \e[0m$(wc -l <<< "$regexList") \e[32mregexps found.\e[0m"
+	echo -e "  [i]\e[32m Regexps entries: \e[0m$(wc -l <<< "$regexList")"
 
 	# Invert match regex patterns against gravity.list
 	echo -e "  [i]\e[32m Identifying unnecessary domains.\e[0m"
