@@ -66,8 +66,8 @@ echo -e " \e[1m     https://github.com/OstrichBot/pihole\e[0m\n"
 
 # Check for Root
 if [ "$(id -u)" != "0" ] ; then
-	echo "This script requires root permissions. Please run this as root!"
-	echo " \e[31m CAUTION: Read through the script before doing so! \e[0m"
+	echo -e "This script requires root permissions. Please run this as root!"
+	echo -e " \e[31m CAUTION: Read through the script before doing so! \e[0m"
 	exit 2
 fi
 
