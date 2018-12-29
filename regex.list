@@ -14,6 +14,9 @@
 ## Block Facebook
 #\.+(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
 
+## Block Twitter
+#\.+(twitter.com|twimg.com)$
+
 ## Mmotti | Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??[m]?ad[sxv]?[0-9]*[-_.]
 ^adim(age|g)s?[0-9]*[-_.]
