@@ -60,6 +60,9 @@ process_regex ()
 # Wipe the Screen
 clear
 
+# Disable PiHole Blocking
+pihole disable
+
 # Advise User what we are doing
 echo -e " \e[1m This script will update PiHole files from the repos at: \e[0m"
 echo -e " \e[1m     https://github.com/OstrichBot/pihole\e[0m\n"
@@ -131,6 +134,9 @@ echo -en "  [i]\e[32m whitelist.txt entries: \e[0m"
 more /etc/pihole/whitelist.txt | grep -v "#" | wc -l
 echo -en "  [i]\e[32m gravity.list entries: \e[0m"
 more /etc/pihole/gravity.list | grep -v "#" | wc -l
+
+# Enable PiHole Blocking
+pihole enable
 
 # Display PiHsedole status
 pihole status
