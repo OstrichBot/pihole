@@ -28,7 +28,7 @@
 ^traff(ic)?[-.]
 
 ## Blocking Comment Sites
-\.+(spot.im|disqus.com|livefyre.com|postmatic.com)$
+\.+(spot.im|disqus.com|livefyre.com|postmatic.com|metype.com)$
 
 ## Block Facebook, Twitter
 #\.+(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
