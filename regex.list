@@ -8,7 +8,13 @@
 ^metrics?[-.]
 
 ## Block Top Shady TLDs
-^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date)$
+^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|info|top|tv)$
+
+## Block Shady Countries
+^.*(ru)
+
+## Block Redirectors
+^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
 
 ## Mmotti's List| Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??[m]?ad[sxv]?[0-9]*[-_.]
