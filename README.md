@@ -4,8 +4,8 @@ Online Repository of Pihole Files. Desgined to centralize list management and en
 #### Installation
 ```
 sudo -s -- <<EOF
-wget -qO /usr/local/bin/update_pihole.sh https://raw.githubusercontent.com/OstrichBot/pihole/master/update_pihole.sh
-chmod +x /usr/local/bin/update_pihole.sh
+wget -qO /usr/local/bin/pihole_update.sh https://raw.githubusercontent.com/OstrichBot/pihole/master/pihole_update.sh
+chmod +x /usr/local/bin/pihole_update.sh
 EOF
 ```
 
