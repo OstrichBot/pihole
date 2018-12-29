@@ -4,7 +4,7 @@
 ## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 ## Updated: 29DEC2018
 
-## White Listing TLDs by using BlackLists (AKA Reject TLDs that dont match)
+## WhiteListing TLDs by using BlackLists (AKA Reject TLDs that dont match)
 \.+(?!(com|net|org|us|edu|mil|gov|io|im))$
 
 ## Testing Section
