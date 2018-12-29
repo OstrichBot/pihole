@@ -61,7 +61,7 @@ echo -e "  ${TICK}\e[32m Updating Whitelists... \e[0m"
 curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 wait
-echo -e "  ${TICK}\e[32m Removing Whitelist duplicates... \e[0m"
+echo -e "  ${TICK}\e[32m Removing Whitelist duplicates... \e[0m\n"
 sudo gawk -i inplace '!a[$0]++' /etc/pihole/whitelist.txt
 wait
 
@@ -74,12 +74,10 @@ pihole updatePihole
 pihole restartdns
 
 # Update Gravity
-echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
+echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m\n"
 pihole -g > /dev/null
 wait
-ooecho -e "\n"
 
 # Display PiHole status
 pihole status
-echo -e "  ${TICK}\e[32m Done! \e[0m"
-echo -e "\n\n"
+echo -e "  ${TICK}\e[32m Done! \e[0m\n"
