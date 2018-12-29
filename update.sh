@@ -35,52 +35,52 @@ if ! (which gawk > /dev/null); then
        dnf install gawk > /dev/null
   fi
   wait
-  echo -e " ${TICK} \e[32m Finished \e[0m"
+  echo -e " ${TICK}\e[32m Finished \e[0m"
 fi
 
 # Remove Old Files
-echo -e " ${TICK} \e[32m Removing Files... \e[0m"
+echo -e "  ${TICK}\e[32m Removing Files... \e[0m"
 rm /etc/pihole/regex.list
 rm /etc/pihole/adlists.list
 wait
 
 # adlists.list
-echo -e " ${TICK} \e[32m Downloading adlists.list... \e[0m"
+echo -e "  ${TICK}\e[32m Downloading adlists.list... \e[0m"
 wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list > /dev/null 2>&1
 wait
 
 # regex.list
-echo -e " ${TICK} \e[32m Downloading regex.list... \e[0m"
+echo -e "  ${TICK}\e[32m Downloading regex.list... \e[0m"
 wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/pihole/master/regex.list > /dev/null 2>&1
 wait
 
 # whitelist.txt
-echo -e " ${TICK} \e[32m Updating Whitelists... \e[0m"
+echo -e "  ${TICK}\e[32m Updating Whitelists... \e[0m"
 curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 wait
-echo -e " ${TICK} \e[32m Removing Whitelist duplicates... \e[0m"
+echo -e "  ${TICK}\e[32m Removing Whitelist duplicates... \e[0m"
 sudo gawk -i inplace '!a[$0]++' /etc/pihole/whitelist.txt
 wait
 
 # Update pihole
 # This will update gravity.list
-echo -e " [...] \e[32m Chekcing for PiHole Updates... \e[0m"
+echo -e " [.]\e[32m Chekcing for PiHole Updates... \e[0m"
 pihole updatePihole > /dev/null
 wait
-echo -e " ${TICK} \e[32m Done... \e[0m"
+echo -e "  ${TICK}\e[32m Done... \e[0m"
 
 # Restart DNS 
-echo -e " ${TICK} \e[32m Restarting PiHole... \e[0m"
+echo -e "  ${TICK}\e[32m Restarting PiHole... \e[0m"
 pihole restartdns > /dev/null
 wait
 
 # Update Gravity
-echo -e " [...] \e[32m Pi-hole gravity rebuilding lists. This may take a while... \e[0m"
+echo -e "  [.]\e[32m Pi-hole gravity rebuilding lists. This may take a while... \e[0m"
 pihole -g > /dev/null
 wait
-echo -e " ${TICK} \e[32m Pi-hole's gravity updated. \e[0m"
-echo -e " ${TICK} \e[32m Done! \e[0m"
+echo -e "  ${TICK}\e[32m Pi-hole's gravity updated. \e[0m"
+echo -e "  ${TICK}\e[32m Done! \e[0m"
 echo -e "\n"
 
 # Display PiHole status
