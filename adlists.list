@@ -1,8 +1,7 @@
 ## PiHole | https://pi-hole.net/ | /etc/pihole/adlists.list
 ## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 ## Source: https://github.com/OstrichBot/pihole/edit/master/adlists.list
-## Updated: 12/24/2018
-## Blocking: 1.1m unique hosts (3.3m total -- major overlap)
+## Updated: 12/29/2018  Reason: gravity.list was too big.
 
 ## SteveBlack | https://github.com/StevenBlack/hosts | 78k domains
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts
