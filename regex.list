@@ -6,6 +6,9 @@
 ## Blocking Comment Sites
 \.+(spot.im|disqus.com|livefyre.com)$
 
+## Block Facebook
+#\.+(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
+
 ## White Listing TLDs
 ## Reject TLDs that don't match
 ^(?!.*(com|net|org|us|co|edu|mil|gov|biz|info|xyz|ly)$)
