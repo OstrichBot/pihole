@@ -14,7 +14,7 @@ clear
 
 # Advise User what we are doing
 echo -e " \e[1m This script will update PiHole files from the repos at: \e[0m"
-echo -e " \e[1m     https://github.com/OstrichBot/pihole\e[0m"
+echo -e " \e[1m     https://github.com/OstrichBot/pihole\e[0m\n"
 
 # Check for Root
 if [ "$(id -u)" != "0" ] ; then
@@ -76,4 +76,4 @@ wait
 
 # Display PiHole status
 pihole status
-echo -e "\n  ${TICK}\e[32m Done! \e[0m\n"
+echo -e "  ${TICK}\e[32m Done! \e[0m\n"
