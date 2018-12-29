@@ -13,7 +13,9 @@ TICK="[\e[32m✔\e[0m]"
 clear
 
 # Advise User what we are doing
-echo -e " \e[1m This script will update PiHole files from the repos \e[0m"
+echo -e " \e[1m This script will update PiHole files from the repos at: \e[0m"
+echo -e " \e[1m     https://github.com/OstrichBot/pihole\e[0m"
+
 sleep 1
 echo -e "\n"
 
