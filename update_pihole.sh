@@ -1,9 +1,12 @@
 #!/bin/bash
-# Based on: https://github.com/anudeepND/whitelist
-# Original License: https://github.com/anudeepND/whitelist/blob/master/LICENSE
+# Based on: 
+# 	https://github.com/anudeepND/whitelist
+# 	https://github.com/mmotti/pihole-gravity-optimise
+#
 # License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 # Source: https://github.com/OstrichBot/pihole/edit/master/update.sh
-# Updated: 29DEC2018 Reason: clean up
+# Updated: 	29DEC2018
+# Reason:	Development & clean-up	
 
 # Set file variables
 file_gravity="/etc/pihole/gravity.list"
