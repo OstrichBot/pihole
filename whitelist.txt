@@ -12,6 +12,7 @@ fls-na.amazon.com
 ## Apple
 itunes.apple.com
 appleid.apple.com
+ocsp.apple.com
 
 ## Google
 id.google.com
@@ -25,6 +26,7 @@ android.clients.google.com
 dl.google.com
 
 ## MS Products
+crl.microsoft.com
 outlook.office365.com
 products.office.com
 c.s-microsoft.com
