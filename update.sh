@@ -26,7 +26,7 @@ fi
 
 # Check which gawk
 if ! (which gawk > /dev/null); then
-  echo -e " [...] \e[32m Installing gawk... \e[0m"
+  echo " [...] \e[32m Installing gawk... \e[0m"
   if (which apt-get > /dev/null); then
        apt-get install gawk -qq > /dev/null
   elif (which pacman > /dev/null); then
@@ -35,7 +35,7 @@ if ! (which gawk > /dev/null); then
        dnf install gawk > /dev/null
   fi
   wait
-  echo -e " ${TICK}\e[32m Finished \e[0m"
+  echo " ${TICK}\e[32m Finished \e[0m"
 fi
 
 # Remove Old Files
@@ -45,21 +45,21 @@ rm /etc/pihole/adlists.list
 wait
 
 # adlists.list
-echo -e "  ${TICK}\e[32m Downloading adlists.list... \e[0m"
+echo "  ${TICK}\e[32m Downloading adlists.list... \e[0m"
 wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list > /dev/null 2>&1
 wait
 
 # regex.list
-echo -e "  ${TICK}\e[32m Downloading regex.list... \e[0m"
+echo "  ${TICK}\e[32m Downloading regex.list... \e[0m"
 wget -O /etc/pihole/regex.list https://raw.githubusercontent.com/OstrichBot/pihole/master/regex.list > /dev/null 2>&1
 wait
 
 # whitelist.txt
-echo -e "  ${TICK}\e[32m Updating Whitelists... \e[0m"
+echo "  ${TICK}\e[32m Updating Whitelists... \e[0m"
 curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 wait
-echo -e "  ${TICK}\e[32m Removing Whitelist duplicates... \e[0m\n"
+echo "  ${TICK}\e[32m Removing Whitelist duplicates... \e[0m\n"
 sudo gawk -i inplace '!a[$0]++' /etc/pihole/whitelist.txt
 wait
 
@@ -71,10 +71,10 @@ pihole updatePihole
 pihole restartdns
 
 # Update Gravity
-echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
+echo "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
 pihole -g > /dev/null
 wait
 
 # Display PiHole status
 pihole status
-echo -e "  ${TICK}\e[32m Done! \e[0m\n"
+echo "  ${TICK}\e[32m Done! \e[0m\n"
