@@ -7,6 +7,9 @@
 ## Testing Section
 ^metrics?[-.]
 
+## Block Top Shady TLDs
+^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date)$
+
 ## Mmotti's List| Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??[m]?ad[sxv]?[0-9]*[-_.]
 ^adim(age|g)s?[0-9]*[-_.]
@@ -24,9 +27,7 @@
 ^track(ers?|ing)?[0-9]*[-.]
 ^traff(ic)?[-.]
 
-## Blocking Comment Sites
-^.+(spot.im|disqus.com|livefyre.com|postmatic.com|metype.com)$
-
-## Block Facebook, Twitter
-#^.+(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
-#^.+(twitter.com|twimg.com)$
+## Block Comment Sites, Facebook, Twitter
+^.*(spot.im|disqus.com|livefyre.com|postmatic.com|metype.com)$
+#^.*(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
+#^.*(twitter.com|twimg.com)$
