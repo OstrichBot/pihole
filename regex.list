@@ -1,19 +1,13 @@
 ## regex.list for Pi-Hole
-## Compiled from several sources, credits in comments
-## Avaliable at https://github.com/OstrichBot/pihole/edit/master/regex.list
-## Updated 29DEC2018
+## Compiled from mixed sources, credits in comments
+## Source: https://github.com/OstrichBot/pihole/edit/master/regex.list
+## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
+## Updated: 29DEC2018
 
 ## White Listing TLDs
 ## http://www.seobythesea.com/2006/01/googles-most-popular-and-least-popular-top-level-domains/
 ## Reject TLDs that dont match
 \.+(?!(com|net|org|us|edu|mil|gov|io|im))$
-
-## Blocking Comment Sites
-\.+(spot.im|disqus.com|livefyre.com)$
-
-## Block Facebook, Twitter
-#\.+(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
-#\.+(twitter.com|twimg.com)$
 
 ## Testing Section
 ^metrics?[-.]
@@ -34,3 +28,10 @@
 ^telemetry[-.]
 ^track(ers?|ing)?[0-9]*[-.]
 ^traff(ic)?[-.]
+
+## Blocking Comment Sites
+\.+(spot.im|disqus.com|livefyre.com)$
+
+## Block Facebook, Twitter
+#\.+(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
+#\.+(twitter.com|twimg.com)$
