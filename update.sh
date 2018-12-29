@@ -67,8 +67,8 @@ wait
 
 # Update pihole
 # This will update gravity.list
-echo -e "  [o]\e[32m Chekcing for Pi-Hole Updates... \e[0m"
-pihole updatePihole > /dev/null
+#echo -e "  [o]\e[32m Checking for Pi-Hole Updates... \e[0m"
+pihole updatePihole
 echo -e "  ${TICK}\e[32m Pi-hole is updated. \e[0m"
 
 # Restart DNS 
