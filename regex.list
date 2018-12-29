@@ -22,13 +22,13 @@
 ^traff(ic)?[-.]
 
 ## Block Countries
-^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm)$
+^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm|de|pl|tk)$
 
 ## Block Top Shady TLDs
 ^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|info|top|tv)$
 
 ## Block other TLDs
-^.*(xyz|club|online|support|asia|stream)$
+^.*(xyz|club|online|support|asia|stream|bid)$
 
 ## Block Redirectors
 ^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
