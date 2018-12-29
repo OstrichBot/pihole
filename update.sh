@@ -1,4 +1,4 @@
-#!/bin/bashrc
+#!/bin/bash
 # Based on: https://github.com/anudeepND/whitelist
 # Original License: https://github.com/anudeepND/whitelist/blob/master/LICENSE
 # License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
