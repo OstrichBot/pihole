@@ -11,7 +11,7 @@
 ^(?!.*(com|net|org|us|co|edu|mil|gov|biz|info|xyz|ly)$)
 
 ## Mmotti | Ref: https://github.com/mmotti/pihole-regex
-^(.+[-_.])??ad[sxv]?[0-9]*[-_.]
+^(.+[-_.])??[m]?ad[sxv]?[0-9]*[-_.]
 ^adim(age|g)s?[0-9]*[-_.]
 ^adse?rv(e(rs?)?|ices?)?[0-9]*[-.]
 ^adtrack(er|ing)?[0-9]*[-.]
