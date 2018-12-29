@@ -128,8 +128,9 @@ echo -e "  ${TICK}\e[32m Enabling Pi-Hole... \e[0m"
 pihole enable
 
 # Reduce gravity.list by removing regex coverage
-echo -e "  [o]\e[32m Removing gravity entries covered by regex. \e[0m\e[31m This may take a while... \e[0m"
-process_regex
+# Currently disabled due to CPU load on RPi
+#echo -e "  [o]\e[32m Removing gravity entries covered by regex. \e[0m\e[31m This may take a while... \e[0m"
+#process_regex
 
 # Provide stats at the end
 echo -en "  [i]\e[32m whitelist.txt entries: \e[0m"
