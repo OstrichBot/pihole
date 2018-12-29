@@ -1,5 +1,4 @@
 ## regex.list for Pi-Hole
-## Compiled from mixed sources, credits in comments
 ## Source: https://github.com/OstrichBot/pihole/edit/master/regex.list
 ## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 ## Updated: 29DEC2018
@@ -29,7 +28,7 @@
 ^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|info|top|tv)$
 
 ## Block other TLDs
-^.*(xyz|club|online|support|asia)$
+^.*(xyz|club|online|support|asia|stream)$
 
 ## Block Redirectors
 ^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
