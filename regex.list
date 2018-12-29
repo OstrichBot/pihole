@@ -11,12 +11,10 @@
 ^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|info|top|tv)$
 
 ## Block other TLDs
-## Not "Shady", but not needed
-^.*(xyz|club|online|support)
+^.*(xyz|club|online|support|asia)
 
 ## Block Countries
-## Based on inspection of gravity.list & my personal biases
-^.*(ru|br|cn|cc|pw|in|kr|hu|ir)
+^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm)
 
 ## Block Redirectors
 ^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
