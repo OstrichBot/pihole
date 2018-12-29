@@ -4,7 +4,6 @@
 # License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 # Source: https://github.com/OstrichBot/pihole/edit/master/update.sh
 # Updated: 29DEC2018 Reason: clean up
-# Run: sudo sh -c "$(curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/update.sh)"
 
 # Define a check mark
 TICK="[\e[32m✔\e[0m]"
