@@ -35,7 +35,7 @@ fi
 echo -e " ${TICK} \e[32m Removing Files... \e[0m"
 rm /etc/pihole/regex.list
 rm /etc/pihole/adlists.list
-sleep 0.5
+wait
 
 # adlists.list
 echo -e " ${TICK} \e[32m Downloading adlists.list... \e[0m"
@@ -56,10 +56,17 @@ echo -e " ${TICK} \e[32m Removing Whitelist duplicates... \e[0m"
 sudo gawk -i inplace '!a[$0]++' /etc/pihole/whitelist.txt
 wait
 
+# Update pihole
+# This will update gravity.list
+echo -e " ${...} \e[32m Chekcing for PiHole Updates... \e[0m"
+pihole updatePihole > /dev/null
+wait
+echo -e " ${TICK} \e[32m Done... \e[0m"
+
 # Restart DNS 
 echo -e " ${TICK} \e[32m Restarting PiHole... \e[0m"
 pihole restartdns > /dev/null
-sleep 5
+wait
 
 # Update Gravity
 echo -e " [...] \e[32m Pi-hole gravity rebuilding lists. This may take a while... \e[0m"
@@ -67,4 +74,8 @@ pihole -g > /dev/null
 wait
 echo -e " ${TICK} \e[32m Pi-hole's gravity updated. \e[0m"
 echo -e " ${TICK} \e[32m Done! \e[0m"
+echo -e "\n\n"
+
+# Display PiHole status
+pihole status
 echo -e "\n\n"
