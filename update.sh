@@ -19,7 +19,7 @@ echo " \e[1m     https://github.com/OstrichBot/pihole\e[0m\n"
 # Check for Root
 if [ "$(id -u)" != "0" ] ; then
 	echo "This script requires root permissions. Please run this as root!"
-	echo -e " \e[31m CAUTION: Read through the script before doing so! \e[0m"
+	echo " \e[31m CAUTION: Read through the script before doing so! \e[0m"
 	exit 2
 fi
 
@@ -38,7 +38,7 @@ if ! (which gawk > /dev/null); then
 fi
 
 # Remove Old Files
-echo -e "  ${TICK}\e[32m Removing Files... \e[0m"
+echo "  ${TICK}\e[32m Removing Files... \e[0m"
 rm /etc/pihole/regex.list
 rm /etc/pihole/adlists.list
 wait
