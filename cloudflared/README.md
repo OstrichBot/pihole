@@ -3,7 +3,7 @@ Online Repository of Pihole Files. Desgined to centralize list management and en
 
 ### Install AMD64 CPUs
 ```
-curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/cloudflared/install_amd64.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/cloudflared/install.sh | sudo bash
 ```
 [Piping to bash can be Dangerous!](https://pi-hole.net/2016/07/25/curling-and-piping-to-bash/)
 
