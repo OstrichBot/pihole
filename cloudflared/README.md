@@ -1,5 +1,5 @@
-# pihole
-Online Repository of Pihole Files. Desgined to centralize list management and ensure single command updates to Pi-Holes.
+# PiHole + cloudflared
+PiHole + DNSSEC + DNS-HTTPS = Winning
 
 ### Install (AMD or ARM)
 ```
