@@ -74,4 +74,4 @@ echo -e "  ${TICK}\e[32m Restarting PiHole... \e[0m"
 pihole restartdns
 
 # Display PiHole Output
-dig @127.0.0.1 -p 5053 google.com
+dig @127.0.0.1 -p 53 google.com
