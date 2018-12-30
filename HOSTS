@@ -1,7 +1,7 @@
-# My locally generated Host File for blocking
+# Locally generated Host File for blocking
 # License: https://github.com/OstrichBot/pihole/blob/master/LICENSE 
 # Source: https://github.com/OstrichBot/pihole/edit/master/HOSTS
-# Updated 29-Dec-2018
+# Updated: 29-Dec-2018
 
 #Data Collectors & Advertisers
 0.0.0.0 bluekai.com
