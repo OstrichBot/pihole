@@ -1,7 +1,7 @@
 # pihole
 Online Repository of Pihole Files. Desgined to centralize list management and ensure single command updates to Pi-Holes.
 
-### Install AMD64 CPUs
+### Install (AMD or ARM)
 ```
 curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/cloudflared/install.sh | sudo bash
 ```
