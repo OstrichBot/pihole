@@ -21,7 +21,7 @@ fi
 
 # Create Install Folder
 mkdir ~/cloudflared_src
-cd ~/cloudflare_src
+cd ~/cloudflared_src
 
 # Window dressing
 echo -e "  ${TICK}\e[32m Checking CPU type... \e[0m"
@@ -45,7 +45,7 @@ if [[ "$(dpkg --print-architecture)" =~ ^amd ]]; then
 fi
 
 # Create User
-sudo useradd -s /usr/sbin/nologin -r -M cloudflared > > /dev/null
+sudo useradd -s /usr/sbin/nologin -r -M cloudflared > /dev/null
 
 # Download cloudflared commandline parameters
 sudo wget -O /etc/default/cloudflared https://raw.githubusercontent.com/OstrichBot/pihole/master/cloudflared/cloudflared.arg > /dev/null 2>&1
