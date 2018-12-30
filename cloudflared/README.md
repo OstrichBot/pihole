@@ -1,7 +1,7 @@
 # PiHole + cloudflared
 PiHole + DNSSEC + DNS-HTTPS = Winning
 
-### Install & Configure PiHole (AMD or ARM)
+### Install cloudflared & Configure PiHole (AMD or ARM)
 ```
 curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/cloudflared/install.sh | sudo bash
 ```
