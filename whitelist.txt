@@ -26,6 +26,7 @@ clients2.google.com
 android.clients.google.com
 dl.google.com
 app-measurement.com
+www.googletagmanager.com
 
 ## MS Products
 crl.microsoft.com
