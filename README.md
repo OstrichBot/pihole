@@ -1,12 +1,10 @@
 # pihole
 Online Repository of Pihole Files. Desgined to centralize list management and ensure single command updates to Pi-Holes.
 
-#### Installation
+### Install onto your PiHole
+[Piping to bash can be Dangerous!](https://pi-hole.net/2016/07/25/curling-and-piping-to-bash/)
 ```
-sudo -s -- <<EOF
-wget -qO /usr/local/bin/pihole_update.sh https://raw.githubusercontent.com/OstrichBot/pihole/master/pihole_update.sh
-chmod +x /usr/local/bin/pihole_update.sh
-EOF
+curl -sSL https://raw.githubusercontent.com/OstrichBot/pihole/master/install.sh | sudo bash
 ```
 
 ### References
