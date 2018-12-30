@@ -18,12 +18,14 @@ ocsp.apple.com
 id.google.com
 googleapis.l.google.com
 google-analytics.com
+ssl.google-analytics.com
 googleapis.l.google.com
 clients4.google.com
 clients3.google.com
 clients2.google.com
 android.clients.google.com
 dl.google.com
+app-measurement.com
 
 ## MS Products
 crl.microsoft.com
