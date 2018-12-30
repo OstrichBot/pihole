@@ -5,7 +5,11 @@
 0.0.0.0 bluekai.com
 0.0.0.0 openx.net
 
-#Malicious
+# OpenDNS block pages caused trust/cert issues
+0.0.0.0 block.opendns.com
+
+# Microsoft
+0.0.0.0 dns.msftncsi.com
 
 #Misc
 0.0.0.0 shopsavvy.com
@@ -13,6 +17,3 @@
 0.0.0.0 revcontent.com
 0.0.0.0 evidon.com
 0.0.0.0 unrulymedia.com
-
-# OpenDNS block pages caused trust/cert issues
-0.0.0.0 block.opendns.com
