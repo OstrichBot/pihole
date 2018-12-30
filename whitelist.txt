@@ -71,6 +71,9 @@ dl.dropboxusercontent.com
 ns1.dropbox.com
 ns2.dropbox.com
 
+# Mumble public servers
+publist.mumble.info
+
 ## Misc
 events.gfe.nvidia.com
 s1.wp.com
@@ -78,6 +81,4 @@ feedly.com
 spclient.wg.spotify.com
 gravatar.com
 widget-cdn.rpxnow.com
-app-analytics.snapchat.com
-sc-analytics.appspot.com
 cf-st.sc-cdn.net
