@@ -18,6 +18,7 @@ https://pi-hole.net/
 https://github.com/mmotti/pihole-regex
 https://github.com/anudeepND/whitelist
 https://github.com/mmotti/pihole-gravity-optimise
+https://bendews.com/posts/implement-dns-over-https/
 ```
 
 ### MIT License 
