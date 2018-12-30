@@ -45,7 +45,12 @@ if [[ "$(dpkg --print-architecture)" =~ ^amd ]]; then
 fi
 
 # Create User
-sudo useradd -s /usr/sbin/nologin -r -M cloudflared > /dev/null
+if id cloudflared >/dev/null 2>&1; then
+        echo -e "  ${CROSS}\e[32m User cloudflared exists... \e[0m"
+else
+        echo -e "  ${TICK}\e[32m Creating user cloudflared... \e[0m"
+	sudo useradd -s /usr/sbin/nologin -r -M cloudflared > /dev/null
+fi
 
 # Download cloudflared commandline parameters
 sudo wget -O /etc/default/cloudflared https://raw.githubusercontent.com/OstrichBot/pihole/master/cloudflared/cloudflared.arg > /dev/null 2>&1
