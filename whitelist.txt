@@ -74,9 +74,12 @@ ns2.dropbox.com
 ## Mumble public servers
 publist.mumble.info
 
+## credit karma ios app
+sponge.creditkarma.com
+api.amplitude.com
+
 ## Misc
 events.gfe.nvidia.com
-sponge.creditkarma.com
 s1.wp.com
 feedly.com
 spclient.wg.spotify.com
