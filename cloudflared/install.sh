@@ -19,6 +19,10 @@ if [ "$(id -u)" != "0" ] ; then
 	exit 2
 fi
 
+# Create Install Folder
+mkdir ~/cloudflared_src
+cd ~/cloudflare_src
+
 # Window dressing
 echo -e "  ${TICK}\e[32m Checking CPU type... \e[0m"
 
