@@ -23,7 +23,7 @@ fi
 echo -e "  ${TICK}\e[32m Checking CPU type... \e[0m"
 
 # Install ARM packages
-if [[ "$(dpkg --print-architecture)" =~ ^arm]]; then
+if [[ "$(dpkg --print-architecture)" =~ ^arm ]]; then
 	echo -e "  ${TICK}\e[32m Downloading ARM cloudflared... \e[0m"
 	sudo wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
 	echo -e "  [o]\e[32m Installing cloudflared... \e[0m"
@@ -33,7 +33,7 @@ if [[ "$(dpkg --print-architecture)" =~ ^arm]]; then
 fi
 
 # Download latest cloudflared client from source AMD
-if [[ "$(dpkg --print-architecture)" =~ ^amd]]; then
+if [[ "$(dpkg --print-architecture)" =~ ^amd ]]; then
 	echo -e "  ${TICK}\e[32m Downloading AMD64 cloudflared... \e[0m"
 	sudo wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.deb > /dev/null 2>&1
 	echo -e "  [o]\e[32m Installing cloudflared... \e[0m"
