@@ -14,6 +14,7 @@ sudo /usr/local/bin/pihole_update.sh
 
 ### References
 ```
+https://pi-hole.net/
 https://github.com/mmotti/pihole-regex
 https://github.com/anudeepND/whitelist
 https://github.com/mmotti/pihole-gravity-optimise
