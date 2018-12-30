@@ -108,7 +108,7 @@ wait
 # whitelist.txt
 echo -e "  ${TICK}\e[32m Updating Whitelists... \e[0m"
 curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
-curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
+curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/whitelist.txt | grep -vP '^#.*' | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 wait
 echo -e "  ${TICK}\e[32m Removing Whitelist duplicates... \e[0m\n"
 sudo gawk -i inplace '!a[$0]++' /etc/pihole/whitelist.txt
