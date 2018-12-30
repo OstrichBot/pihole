@@ -76,6 +76,7 @@ publist.mumble.info
 
 ## Misc
 events.gfe.nvidia.com
+sponge.creditkarma.com
 s1.wp.com
 feedly.com
 spclient.wg.spotify.com
