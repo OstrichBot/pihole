@@ -71,7 +71,7 @@ dl.dropboxusercontent.com
 ns1.dropbox.com
 ns2.dropbox.com
 
-# Mumble public servers
+## Mumble public servers
 publist.mumble.info
 
 ## Misc
