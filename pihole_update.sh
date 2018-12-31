@@ -104,7 +104,7 @@ wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pi
 memAvail=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
 memTotal=$(grep MemTotal /proc/meminfo | awk '{print $2}')
 if (($memTotal > 1000000)); then
-	echo -en "  [?] \e[32mYou have 1gb+ of RAM. "
+	echo -en "  [?] \e[33mYou have 1gb+ of RAM. "
 	while true; do
     		read -p "Would you like the extended adlists (Y/n)?" yn
     		case $yn in
