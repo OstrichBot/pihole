@@ -4,7 +4,7 @@
 ## Extended adlists.list for machines with more memory
 
 ## Adult Content | https://github.com/chadmayfield/my-pihole-blocklists
-https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list
+#https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list
 
 ## Host-files.net | https://hosts-file.net/?s=classifications
 https://hosts-file.net/ad_servers.txt
