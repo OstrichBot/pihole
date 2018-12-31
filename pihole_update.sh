@@ -95,17 +95,18 @@ rm /etc/pihole/regex.list
 rm /etc/pihole/adlists.list
 wait
 
-# Measure Memory
+
+# adlists.list
+echo -e "  ${TICK}\e[32m Downloading adlists.list... \e[0m"
+wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list > /dev/null 2>&1
+
+# extended adlists.list for users with more memory
 memAvail=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
 memTotal=$(grep MemTotal /proc/meminfo | awk '{print $2}')
 
-# adlists.list // Scale on Memory
 if (($memTotal > 1000000)); then
 	echo -e "  ${TICK}\e[32m Downloading extended adlists.list... \e[0m"
-	wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list > /dev/null 2>&1
-else
-	echo -e "  ${TICK}\e[32m Downloading adlists.list... \e[0m"
-	wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list > /dev/null 2>&1
+	curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists-extended.list | sudo tee -a /etc/pihole/adlists.list >/dev/null
 fi
 
 # regex.list
