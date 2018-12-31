@@ -103,10 +103,15 @@ wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pi
 # extended adlists.list for users with more memory
 memAvail=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
 memTotal=$(grep MemTotal /proc/meminfo | awk '{print $2}')
-
-if (($memTotal > 1500000)); then
-	echo -e "  ${TICK}\e[32m Downloading extended adlists.list... \e[0m"
-	curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists-extended.list | sudo tee -a /etc/pihole/adlists.list >/dev/null
+if (($memTotal > 1000000)); then
+	while true; do
+    		read -p "You have > 1gb of RAM. Would you like the extended adlists?" yn
+    		case $yn in
+        		[Yy]* ) echo -e "  ${TICK}\e[32m Downloading extended adlists.list... \e[0m"; curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists-extended.list | sudo tee -a /etc/pihole/adlists.list >/dev/null; break;;
+        		[Nn]* ) break;;
+        		* ) echo "Please answer yes or no.";;
+    		esac
+	done
 fi
 
 # regex.list
