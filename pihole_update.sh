@@ -129,7 +129,7 @@ pihole updatePihole
 
 # Update Gravity
 echo -e "  [o]\e[32m Pi-hole gravity rebuilding lists. \e[0m\e[31m This may take a while... \e[0m"
-pihole -g > /dev/null
+pihole -g | grep "Number of"
 wait
 
 # Enable PiHole Blocking
@@ -140,12 +140,6 @@ pihole enable
 # Currently disabled due to CPU load on RPi
 #echo -e "  [o]\e[32m Removing gravity entries covered by regex. \e[0m\e[31m This may take a while... \e[0m"
 #process_regex
-
-# Provide stats at the end
-echo -en "  [i]\e[32m whitelist.txt entries: \e[0m"
-more /etc/pihole/whitelist.txt | grep -v "#" | wc -l
-echo -en "  [i]\e[32m gravity.list entries: \e[0m"
-more /etc/pihole/gravity.list | grep -v "#" | wc -l
 
 # Display Pi-Hole status
 pihole status
