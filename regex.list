@@ -22,7 +22,7 @@
 ^traff(ic)?[-.]
 
 ## Block Countries
-^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm|pl|tk|ec)$
+^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm|pl|tk)$
 
 ## Block Top Shady TLDs
 ^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|top)$
