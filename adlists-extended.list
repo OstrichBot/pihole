@@ -1,0 +1,21 @@
+## PiHole | https://pi-hole.net/ | /etc/pihole/adlists-extended.list
+## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
+## Source: https://github.com/OstrichBot/pihole/edit/master/adlists-extended.list
+## Appended to adlists.list for machines with more memory
+
+## Adult Content | https://github.com/chadmayfield/my-pihole-blocklists
+https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
+
+## Host-files.net | https://hosts-file.net/?s=classifications | 2m domains (major overlap)
+## Uncomment to increase gravity.list size
+https://hosts-file.net/ad_servers.txt
+https://hosts-file.net/emd.txt 
+https://hosts-file.net/exp.txt
+https://hosts-file.net/fsa.txt
+https://hosts-file.net/grm.txt
+https://hosts-file.net/hjk.txt
+https://hosts-file.net/mmt.txt
+https://hosts-file.net/pha.txt
+https://hosts-file.net/psh.txt
+https://hosts-file.net/pup.txt
+https://hosts-file.net/wrz.txt
