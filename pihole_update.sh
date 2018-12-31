@@ -141,6 +141,9 @@ wait
 echo -e "  ${TICK}\e[32m Enabling Pi-Hole... \e[0m"
 pihole enable
 
+# Sleep to let pihole-FTL load up in memory
+sleep 5
+
 # Reduce gravity.list by removing regex coverage
 # Currently disabled due to CPU load on RPi
 #echo -e "  [o]\e[32m Removing gravity entries covered by regex. \e[0m\e[31m This may take a while... \e[0m"
