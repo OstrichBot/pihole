@@ -83,19 +83,5 @@ https://zerodot1.gitlab.io/CoinBlockerLists/hosts
 https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
 https://www.malwaredomainlist.com/hostslist/hosts.txt
 
-## Host-files.net | https://hosts-file.net/?s=classifications | 2m domains (major overlap)
-## Uncomment to increase gravity.list size
-#https://hosts-file.net/ad_servers.txt
-#https://hosts-file.net/emd.txt 
-#https://hosts-file.net/exp.txt
-#https://hosts-file.net/fsa.txt
-#https://hosts-file.net/grm.txt
-#https://hosts-file.net/hjk.txt
-#https://hosts-file.net/mmt.txt
-#https://hosts-file.net/pha.txt
-#https://hosts-file.net/psh.txt
-#https://hosts-file.net/pup.txt
-#https://hosts-file.net/wrz.txt
-
 ## My Custom List
 https://raw.githubusercontent.com/OstrichBot/pihole/master/HOSTS
