@@ -33,6 +33,12 @@
 ## Block Redirectors
 ^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
 
+## Block Phishing Attemps
+## Detect oddities before/after major domains I use.
+## This may break things
+\.?[0-9a-zA-Z](usaa|vanguard|paypal|ebay|amazon|google)\.com
+\.?(usaa|vanguard|paypal|ebay|amazon|google)[0-9a-zA-Z]\.com
+
 ## Block Comment Sites, Facebook, Twitter
 ^.*(spot.im|disqus.com|livefyre.com|postmatic.com|metype.com)$
 #^.*(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
