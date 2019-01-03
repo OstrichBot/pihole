@@ -36,8 +36,8 @@
 ## Block Phishing Attemps
 ## Detect oddities before/after major domains I use.
 ## This may break things
-\.?[0-9a-zA-Z](usaa|vanguard|paypal|ebay|amazon|google)\.com
-\.?(usaa|vanguard|paypal|ebay|amazon|google)[0-9a-zA-Z]\.com
+#\.?[0-9a-zA-Z](usaa|vanguard|paypal|ebay|amazon|google)\.com
+#\.?(usaa|vanguard|paypal|ebay|amazon|google)[0-9a-zA-Z]\.com
 
 ## Block Comment Sites, Facebook, Twitter
 ^.*(spot.im|disqus.com|livefyre.com|postmatic.com|metype.com)$
