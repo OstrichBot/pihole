@@ -1,3 +1,6 @@
+## Content Delivery Sites
+player.h-cdn.com
+
 ## Toms Hardware
 img.purch.com
 
