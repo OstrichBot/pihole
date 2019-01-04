@@ -39,6 +39,10 @@ https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 https://zeustracker.abuse.ch/blocklist.php?download=baddomains
 https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
 
+## Host-files.net | https://hosts-file.net/?s=classifications
+https://hosts-file.net/emd.txt 
+https://hosts-file.net/exp.txt
+
 ## MalwareDomains | 26k domains
 https://mirror1.malwaredomains.com/files/justdomains
 
