@@ -147,5 +147,4 @@ pihole enable
 
 # Display Pi-Hole status
 pihole status
-echo -e "  ${TICK}\e[32m Using $(ps -eo %mem,cmd | grep 'pihole-FTL' | grep -oP '^[0-9][0-9]\.[0-9]')% of system memory...\e[0m"
 echo -e "  ${TICK}\e[32m Done! \e[0m\n"
