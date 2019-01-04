@@ -1,28 +1,33 @@
 ## PiHole | https://pi-hole.net/ | /etc/pihole/adlists.list
 ## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 ## Source: https://github.com/OstrichBot/pihole/edit/master/adlists.list
-## Updated: 12/29/2018  Reason: gravity.list was too big.
+## Updated: 01/03/2019
 
 ## SteveBlack | https://github.com/StevenBlack/hosts | 78k domains
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts
-
-## MalwareDomains | 26k domains
-https://mirror1.malwaredomains.com/files/justdomains
-
-## mvps.org | 14k domains
-http://winhelp2002.mvps.org/hosts.txt
 
 ## dshield.org | 21.6k domains
 https://www.dshield.org/feeds/suspiciousdomains_Low.txt
 https://www.dshield.org/feeds/suspiciousdomains_Medium.txt
 https://www.dshield.org/feeds/suspiciousdomains_High.txt
 
+## Prigent -- Hosted by firebog
+https://v.firebog.net/hosts/Prigent-Ads.txt
+https://v.firebog.net/hosts/Prigent-Malware.txt
+https://v.firebog.net/hosts/Prigent-Phishing.txt
+
+## EasyList / EasyPrivacy -- Hosted by firebot
+https://v.firebog.net/hosts/Easylist.txt
+https://v.firebog.net/hosts/Easyprivacy.txt
+
 ## Squidblacklist | 99k domains | https://www.squidblacklist.org/downloads.html | FREE!
 https://www.squidblacklist.org/downloads/dg-ads.acl
 https://www.squidblacklist.org/downloads/dg-malicious.acl
 
-## https://www.malwaredomainlist.com/
-https://www.malwaredomainlist.com/hostslist/hosts.txt 
+## OpenFish & Phishtank | 15k domains
+## https://www.reddit.com/r/pihole/comments/9g2i2g/phishing_protection_comparing_dns_security_filters/e64z7ji/
+https://dnsbl.karelvanhecke.com/openphish_30d.txt
+https://dnsbl.karelvanhecke.com/phishtank.txt
 
 ## Abuse.ch | https://abuse.ch/ | 3k domains
 https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
@@ -34,27 +39,26 @@ https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 https://zeustracker.abuse.ch/blocklist.php?download=baddomains
 https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
 
+## MalwareDomains | 26k domains
+https://mirror1.malwaredomains.com/files/justdomains
+
+## https://www.malwaredomainlist.com/
+https://www.malwaredomainlist.com/hostslist/hosts.txt 
+
+## mvps.org | 14k domains
+http://winhelp2002.mvps.org/hosts.txt
+
 ## Disconnect.me Tracking
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
-
-## OpenFish & Phishtank | 15k domains
-## https://www.reddit.com/r/pihole/comments/9g2i2g/phishing_protection_comparing_dns_security_filters/e64z7ji/
-https://dnsbl.karelvanhecke.com/openphish_30d.txt
-https://dnsbl.karelvanhecke.com/phishtank.txt
 
 ## Quids | https://gitlab.com/quidsup/notrack-blocklists/
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
 
 ## FireBog Hosted | https://firebog.net/
-https://v.firebog.net/hosts/Prigent-Ads.txt
-https://v.firebog.net/hosts/Prigent-Malware.txt
-https://v.firebog.net/hosts/Prigent-Phishing.txt
 https://v.firebog.net/hosts/AdguardDNS.txt
-https://v.firebog.net/hosts/Easylist.txt
-https://v.firebog.net/hosts/Easyprivacy.txt
 https://v.firebog.net/hosts/Shalla-mal.txt
 https://v.firebog.net/hosts/static/w3kbl.txt
 https://v.firebog.net/hosts/Cybercrime.txt
