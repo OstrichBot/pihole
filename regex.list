@@ -3,6 +3,9 @@
 ## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 ## Updated: 29DEC2018
 
+## https://community.webroot.com/t5/Webroot-SecureAnywhere-Internet/g00-adware-insertion/td-p/279885
+\.g00\.
+
 ## Mmotti's List| Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??m?ad[sxv]?[0-9]*[-_.]
 ^adim(age|g)s?[0-9]*[-_.]
