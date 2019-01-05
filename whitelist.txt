@@ -38,6 +38,11 @@ dl.delivery.mp.microsoft.com
 geo-prod.do.dsp.mp.microsoft.com
 displaycatalog.mp.microsoft.com
 
+## MS Telemetry
+## https://support.microsoft.com/en-us/help/3068708/update-for-customer-experience-and-diagnostic-telemetry
+vortex-win.data.microsoft.com
+settings-win.data.microsoft.com
+
 ## Plex
 plex.tv
 tvdb2.plex.tv
