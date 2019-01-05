@@ -30,8 +30,8 @@
 ^track(ers?|ing)?[0-9]*[-.]
 ^traff(ic)?[-.]
 
-## g00-adware-insertion filter
-\.g00\.
+## g00-adware-insertion filter | disruptive
+#\.g00\.
 
 ## Block Redirectors
 ^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
