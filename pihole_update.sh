@@ -141,7 +141,7 @@ echo -e "  ${TICK}\e[32m Enabling Pi-Hole... \e[0m"
 pihole enable
 
 # Reduce gravity.list by removing regex coverage
-echo -en "  [?] \e[33m "
+echo -en "  [?] \e[33m"
 while true; do
 	read -p "Would you like to remove regex.list matches from gravity.list (Y/n)? " yn
     	case $yn in
