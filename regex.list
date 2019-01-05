@@ -3,8 +3,14 @@
 ## License: https://github.com/OstrichBot/pihole/blob/master/LICENSE
 ## Updated: 29DEC2018
 
-## https://community.webroot.com/t5/Webroot-SecureAnywhere-Internet/g00-adware-insertion/td-p/279885
-\.g00\.
+## Block Countries
+^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm|pl|tk)$
+
+## Block Top Shady TLDs
+^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|top)$
+
+## Block other TLDs
+^.*(xyz|club|online|support|asia|stream|bid)$
 
 ## Mmotti's List| Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??m?ad[sxv]?[0-9]*[-_.]
@@ -24,23 +30,20 @@
 ^track(ers?|ing)?[0-9]*[-.]
 ^traff(ic)?[-.]
 
-## Block Countries
-^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm|pl|tk)$
-
-## Block Top Shady TLDs
-^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|top)$
-
-## Block other TLDs
-^.*(xyz|club|online|support|asia|stream|bid)$
-
-## Block Tracking & Traffic Referal Sites
-^.*(dataminr.com|outbrain.com|taboola.com)$
+## g00-adware-insertion filter
+\.g00\.
 
 ## Block Redirectors
 ^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
 
+## Block Tracking & Traffic Referal Sites
+^.*(dataminr.com|outbrain.com|taboola.com)$
+
 ## Block Comment Sites
 ^.*(spot.im|disqus.com|livefyre.com|postmatic.com|metype.com)$
+
+## Block Advertisers | Based on PrivacyBadger Extracts
+^.*(openx.net|(fls|g).doubleclick.net|tt.omtrdc.net|freshdesk.com|amazon-adsystem.com|pubmatic.com|demdex.net|rubiconproject.com|leadpages.co|v.fwmrm.net|myshopify.com|adnxs.com|addthis.com|sharethis.com|salesforceliveagent.com|quantserve.com|bigcommerce.com|imrworldwide.com)$
 
 ## Social Media
 #^.*(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
