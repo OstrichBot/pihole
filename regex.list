@@ -30,16 +30,15 @@
 ## Block other TLDs
 ^.*(xyz|club|online|support|asia|stream|bid)$
 
+## Block Tracking & Traffic Referal Sites
+^.*(dataminr.com|outbrain.com|taboola.com)$
+
 ## Block Redirectors
 ^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
 
-## Block Phishing Attemps
-## Detect oddities before/after major domains I use.
-## This may break things
-#\.?[0-9a-zA-Z](usaa|vanguard|paypal|ebay|amazon|google)\.com
-#\.?(usaa|vanguard|paypal|ebay|amazon|google)[0-9a-zA-Z]\.com
-
-## Block Comment Sites, Facebook, Twitter
+## Block Comment Sites
 ^.*(spot.im|disqus.com|livefyre.com|postmatic.com|metype.com)$
+
+## Social Media
 #^.*(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
 #^.*(twitter.com|twimg.com)$
