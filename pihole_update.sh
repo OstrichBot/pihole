@@ -145,6 +145,19 @@ pihole enable
 #echo -e "  [o]\e[32m Removing gravity entries covered by regex. \e[0m\e[31m This may take a while... \e[0m"
 #process_regex
 
+# extended adlists.list for users with more memory
+memCheck=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
+if (($memCheck > 512000)); then
+	echo -en "  [?] \e[33m "
+	while true; do
+    		read -p "Would you like to remove regex.list matches from gravity.list (Y/n)?" yn
+    		case $yn in
+        		[Yy]* ) echo -e "  ${TICK}\e[32m Reducing gravity.list... \e[31m This may take a while... \e[0m"; process_regex; break;;
+        		[Nn]* ) break;;
+    		esac
+	done
+fi
+
 # Display Pi-Hole status
 pihole status
 echo -e "  ${TICK}\e[32m Done! \e[0m\n"
