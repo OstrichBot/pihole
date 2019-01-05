@@ -141,22 +141,13 @@ echo -e "  ${TICK}\e[32m Enabling Pi-Hole... \e[0m"
 pihole enable
 
 # Reduce gravity.list by removing regex coverage
-# Currently disabled due to CPU load on RPi
-#echo -e "  [o]\e[32m Removing gravity entries covered by regex. \e[0m\e[31m This may take a while... \e[0m"
-#process_regex
-
-# extended adlists.list for users with more memory
-memCheck=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
-if (($memCheck > 512000)); then
-	echo -en "  [?] \e[33m "
-	while true; do
-    		read -p "Would you like to remove regex.list matches from gravity.list (Y/n)?" yn
-    		case $yn in
-        		[Yy]* ) echo -e "  ${TICK}\e[32m Reducing gravity.list... \e[31m This may take a while... \e[0m"; process_regex; break;;
-        		[Nn]* ) break;;
-    		esac
-	done
-fi
+while true; do
+	read -p "Would you like to remove regex.list matches from gravity.list (Y/n)? " yn
+    	case $yn in
+        	[Yy]* ) echo -e "  ${TICK}\e[32m Reducing gravity.list... \e[31m This may take a while... \e[0m"; process_regex; break;;
+        	[Nn]* ) break;;
+    	esac
+done
 
 # Display Pi-Hole status
 pihole status
