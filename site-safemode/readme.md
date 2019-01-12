@@ -1,1 +1,1 @@
-Force your favorite sites to operate in Safe Mode.  With DNSMASQ.d & Host file.
+Force your favorite sites to operate in Safe Mode using DNSMASQ.d & Host file.
