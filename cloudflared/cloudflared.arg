@@ -1,3 +1,13 @@
-# Commandline args for cloudflared | 
-# IPv6 | --upstream https://2606:4700:4700::1111/dns-query --upstream https://2606:4700:4700::1001/dns-query
+# Commandline args for cloudflared
+
+# CloudFlare IPv4 only
 CLOUDFLARED_OPTS=--port 5053 --upstream https://1.1.1.1/dns-query --upstream https://1.0.0.1/dns-query
+
+# CloudFlare IPv4 + IPv6
+# CLOUDFLARED_OPTS=--port 5053 --upstream https://1.1.1.1/dns-query --upstream https://1.0.0.1/dns-query --upstream https://2606:4700:4700::1111/dns-query --upstream https://2606:4700:4700::1001/dns-query
+
+# Cleanbrowsing // (security-filter | adult-filter | family-filter)
+# CLOUDFLARED_OPTS=--port 5053 --upstream https://doh.cleanbrowsing.org/doh/adult-filter
+
+# Adguard // https://adguard.com/en/adguard-dns/overview.html
+# CLOUDFLARED_OPTS=--port 5053 --upstream https://dns-family.adguard.com/dns-query
