@@ -4,13 +4,13 @@
 ## Updated: 29DEC2018
 
 ## Block Countries
-^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm|pl|tk)$
+^.*(ru|br|cn|cc|pw|in|kr|hu|ir|za|cz|ua|su|sk|rs|fm|pl|tk|ve)$
 
 ## Block Top Shady TLDs
-^.*(loan|work|gq|cf|ga|ml|world|organic|tk|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|top)$
+^.*(loan|work|gq|cf|ga|ml|world|organic|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|top)$
 
 ## Block other TLDs
-^.*(xyz|club|online|support|asia|stream|bid)$
+^.*(xyz|club|online|support|asia|stream|bid|review)$
 
 ## Mmotti's List| Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??m?ad[sxv]?[0-9]*[-_.]
