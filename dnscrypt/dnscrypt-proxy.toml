@@ -9,6 +9,8 @@
 ##
 ## Online documentation is available here: https://dnscrypt.info/doc
 
+
+
 ##################################
 #         Global settings        #
 ##################################
@@ -88,10 +90,10 @@ keepalive = 30
 lb_strategy = 'fastest'
 
 ## Log level (0-6, default: 2 - 0 is very verbose, 6 only contains fatal errors)
-# log_level = 2
+log_level = 2
 
 ## log file for the application
-# log_file = 'dnscrypt-proxy.log'
+log_file = '/var/log/dnscrypt/dnscrypt-proxy.log'
 
 ## Use the system logger (syslog on Unix, Event Log on Windows)
 # use_syslog = true
@@ -102,10 +104,10 @@ cert_refresh_delay = 240
 ## DNSCrypt: Create a new, unique key for every single DNS query
 ## This may improve privacy but can also have a significant impact on CPU usage
 ## Only enable if you don't have a lot of network load
-# dnscrypt_ephemeral_keys = false
+dnscrypt_ephemeral_keys = true
 
 ## DoH: Disable TLS session tickets - increases privacy but also latency
-# tls_disable_session_tickets = false
+tls_disable_session_tickets = true
 
 ## DoH: Use a specific cipher suite instead of the server preference
 ## 49199 = TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
@@ -136,7 +138,7 @@ tls_cipher_suite = [52392, 49199]
 ## Other popular options include 8.8.8.8 and 1.1.1.1.
 
 #https://cleanbrowsing.org/ip-address
-fallback_resolver = '185.228.168.10'
+fallback_resolver = '185.228.168.10:53'
 
 ## Never let dnscrypt-proxy try to use the system DNS settings;
 ## unconditionally use the fallback resolver.
@@ -154,9 +156,7 @@ netprobe_timeout = 30
 ## plugins can handle directly (forwarding, cloaking, ...)
 # offline_mode = false
 
-
 ## Automatic log files rotation
-
 # Maximum log files size in MB
 log_files_max_size = 10
 
@@ -165,7 +165,6 @@ log_files_max_age = 7
 
 # Maximum log files backups to keep (or 0 to keep all backups)
 log_files_max_backups = 1
-
 
 
 #########################
@@ -186,7 +185,6 @@ block_ipv6 = false
 ## Example map entries (one entry per line):
 ## example.com 9.9.9.9
 ## example.net 9.9.9.9,8.8.8.8,1.1.1.1
-
 # forwarding_rules = 'forwarding-rules.txt'
 
 ###############################
@@ -200,7 +198,6 @@ block_ipv6 = false
 ## Example map entries (one entry per line)
 ## example.com     10.1.1.1
 ## www.google.com  forcesafesearch.google.com
-
 # cloaking_rules = 'cloaking-rules.txt'
 
 ###########################
@@ -208,7 +205,8 @@ block_ipv6 = false
 ###########################
 
 ## Enable a DNS cache to reduce latency and outgoing traffic
-cache = true
+## Caching occurs w/ PiHole
+cache = false
 
 ## Cache size
 cache_size = 512
@@ -234,13 +232,13 @@ cache_neg_max_ttl = 600
 [query_log]
 
   ## Path to the query log file (absolute, or relative to the same directory as the executable file)
-  # file = 'query.log'
+  file = '/var/log/dnscrypt/query.log'
 
   ## Query log format (currently supported: tsv and ltsv)
   format = 'tsv'
 
   ## Do not log these query types, to reduce verbosity. Keep empty to log everything.
-  # ignored_qtypes = ['DNSKEY', 'NS']
+  ignored_qtypes = ['DNSKEY', 'NS']
 
 ############################################
 #        Suspicious queries logging        #
@@ -253,7 +251,7 @@ cache_neg_max_ttl = 600
 [nx_log]
 
   ## Path to the query log file (absolute, or relative to the same directory as the executable file)
-  # file = 'nx.log'
+  file = '/var/log/dnscrypt/nx.log'
 
   ## Query log format (currently supported: tsv and ltsv)
   format = 'tsv'
@@ -336,6 +334,8 @@ cache_neg_max_ttl = 600
   ## Optional log format: tsv or ltsv (default: tsv)
 
   # log_format = 'tsv'
+
+
 
 ##########################################
 #        Time access restrictions        #
