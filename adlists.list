@@ -110,6 +110,7 @@ https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt
 https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts
 https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts
 https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts
+#https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
 
 ## My Custom List
 https://raw.githubusercontent.com/OstrichBot/pihole/master/HOSTS
