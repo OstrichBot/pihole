@@ -1,13 +1,8 @@
-Force your favorite sites to operate in Safe Mode using DNSMASQ.d & Host file.
-
-### Reference
-```
-https://support.opendns.com/hc/en-us/articles/227986807-How-to-Enforcing-Google-SafeSearch-YouTube-and-Bing
-```
+dnsmasq configuration files
 
 ### MIT License 
 ```
-Copyright (c) 2018 OstrichBot <Ostrichbot@th3v01d.net>
+Copyright (c) 2019 OstrichBot <Ostrichbot@th3v01d.net>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
