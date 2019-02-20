@@ -43,6 +43,13 @@ displaycatalog.mp.microsoft.com
 vortex-win.data.microsoft.com
 settings-win.data.microsoft.com
 
+# Nvidia updates
+ota-downloads.nvidia.com
+
+# GeForce Experience
+events.gfe.nvidia.com
+gfwsl.geforce.com
+
 ## Plex
 plex.tv
 tvdb2.plex.tv
@@ -83,8 +90,24 @@ publist.mumble.info
 sponge.creditkarma.com
 api.amplitude.com
 
+# Samsung TV's Amazon Prime Video app
+time.samsungcloudsolution.com
+
+# Samsung smart TV's network issue
+cdn.samsungcloudsolution.com
+
+# Roku TV CW and NBC app
+cwtv-mrss-akamai.cwtv.com
+cwtv-prod-elb.digitalsmiths.net
+redirector.googlevideo.com
+
+# Netflix - Domains needed for netlix to work correctly
+api-global.netflix.com
+ichnaea.netflix.com
+appboot.netflix.com
+secure.netflix.com
+
 ## Misc
-events.gfe.nvidia.com
 s1.wp.com
 feedly.com
 spclient.wg.spotify.com
