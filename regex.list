@@ -13,9 +13,10 @@
 ^.*(xyz|club|online|support|asia|stream|bid|review)$
 
 ## Mmotti's List| Ref: https://github.com/mmotti/pihole-regex
+^(.+[-_.])??adse?rv(er?|ice)?s?[0-9]*[-.]
 ^(.+[-_.])??m?ad[sxv]?[0-9]*[-_.]
+^(.+[-_.])??xn--
 ^adim(age|g)s?[0-9]*[-_.]
-^adse?rv(e(rs?)?|ices?)?[0-9]*[-.]
 ^adtrack(er|ing)?[0-9]*[-.]
 ^advert(s|is(ing|ements?))?[0-9]*[-_.]
 ^aff(iliat(es?|ion))?[-.]
@@ -23,9 +24,8 @@
 ^banners?[-.]
 ^beacons?[0-9]*[-.]
 ^count(ers?)?[0-9]*[-.]
-^metrics?[-.]
 ^pixels?[-.]
-^stat(s|istics)?[0-9]*[-.]o
+^stat(s|istics)?[0-9]*[-.]
 ^telemetry[-.]
 ^track(ers?|ing)?[0-9]*[-.]
 ^traff(ic)?[-.]
