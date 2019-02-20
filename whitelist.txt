@@ -4,6 +4,7 @@ img.purch.com
 ## Amazon Services
 kinesis.us-east-1.amazonaws.com
 device-metrics-us.amazon.com
+device-metrics-us-2.amazon.com
 mas-ext.amazon.com
 mas-sdk.amazon.com
 mas-ssr.amazon.com
@@ -96,7 +97,7 @@ time.samsungcloudsolution.com
 # Samsung smart TV's network issue
 cdn.samsungcloudsolution.com
 
-# Roku TV CW and NBC app
+# CW and NBC app
 cwtv-mrss-akamai.cwtv.com
 cwtv-prod-elb.digitalsmiths.net
 redirector.googlevideo.com
