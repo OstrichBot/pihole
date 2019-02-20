@@ -102,6 +102,10 @@ https://zerodot1.gitlab.io/CoinBlockerLists/hosts
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
 https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/hosts
 
+## anudeepND | https://github.com/anudeepND/blacklist
+https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
+https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt
+
 ## Various Adult Content Lists
 https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts
 https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts
