@@ -1,4 +1,4 @@
-dnsmasq configuration files
+DNSMASQ configuration files to supplement PiHole deployments.
 
 ### MIT License 
 ```
