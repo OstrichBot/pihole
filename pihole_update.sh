@@ -2,7 +2,7 @@
 # Credits: 	https://github.com/anudeepND/whitelist & https://github.com/mmotti/pihole-gravity-optimise
 # License: 	https://github.com/OstrichBot/pihole/blob/master/LICENSE
 # Source:	https://raw.githubusercontent.com/OstrichBot/pihole/master/update_pihole.sh
-# Updated: 	29DEC2018
+# Updated: 	20FEB2019
 
 # Set file variables
 file_gravity="/etc/pihole/gravity.list"
