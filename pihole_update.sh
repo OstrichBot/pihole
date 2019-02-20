@@ -101,17 +101,17 @@ echo -e "  ${TICK}\e[32m Downloading adlists.list... \e[0m"
 wget -O /etc/pihole/adlists.list https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists.list > /dev/null 2>&1
 
 # extended adlists.list for users with more memory
-memCheck=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
-if (($memCheck > 512000)); then
-	echo -en "  [?] \e[33mYou have 512mb+ of memory available. "
-	while true; do
-    		read -p "Would you like the extended adlists (Y/n)?" yn
-    		case $yn in
-        		[Yy]* ) echo -e "  ${TICK}\e[32m Downloading extended adlists.list... \e[0m"; curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists-extended.list | sudo tee -a /etc/pihole/adlists.list >/dev/null; break;;
-        		[Nn]* ) break;;
-    		esac
-	done
-fi
+#memCheck=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
+#if (($memCheck > 512000)); then
+#	echo -en "  [?] \e[33mYou have 512mb+ of memory available. "
+#	while true; do
+#    		read -p "Would you like the extended adlists (Y/n)?" yn
+#    		case $yn in
+#        		[Yy]* ) echo -e "  ${TICK}\e[32m Downloading extended adlists.list... \e[0m"; curl -sS https://raw.githubusercontent.com/OstrichBot/pihole/master/adlists-extended.list | sudo tee -a /etc/pihole/adlists.list >/dev/null; break;;
+#        		[Nn]* ) break;;
+#    		esac
+#	done
+#fi
 
 # regex.list
 echo -e "  ${TICK}\e[32m Downloading regex.list... \e[0m"
@@ -141,14 +141,14 @@ echo -e "  ${TICK}\e[32m Enabling Pi-Hole... \e[0m"
 pihole enable
 
 # Reduce gravity.list by removing regex coverage
-echo -en "  [?] \e[33m"
-while true; do
-	read -p "Would you like to remove regex.list matches from gravity.list (Y/n)? " yn
-    	case $yn in
-        	[Yy]* ) echo -e "  ${TICK}\e[32m Reducing gravity.list... \e[31m This may take a while... \e[0m"; process_regex; break;;
-        	[Nn]* ) break;;
-    	esac
-done
+#echo -en "  [?] \e[33m"
+#while true; do
+#	read -p "Would you like to remove regex.list matches from gravity.list (Y/n)? " yn
+#    	case $yn in
+#        	[Yy]* ) echo -e "  ${TICK}\e[32m Reducing gravity.list... \e[31m This may take a while... \e[0m"; process_regex; break;;
+#        	[Nn]* ) break;;
+#    	esac
+#done
 
 # Display Pi-Hole status
 pihole status
