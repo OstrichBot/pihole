@@ -108,6 +108,10 @@ ichnaea.netflix.com
 appboot.netflix.com
 secure.netflix.com
 
+# Bicycle Sites
+road.cc
+off.road.cc
+
 ## Misc
 s1.wp.com
 feedly.com
