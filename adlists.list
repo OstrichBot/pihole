@@ -3,11 +3,21 @@
 ## Source: https://github.com/OstrichBot/pihole/edit/master/adlists.list
 ## Updated: 04/20/2019
 
-## Malware Domain List | https://www.malwaredomainlist.com/
-https://www.malwaredomainlist.com/hostslist/hosts.txt
+## Steven Black's ad-hoc list | https://github.com/StevenBlack/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts
 
-## yoyo.org | https://pgl.yoyo.org/adservers/
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0
+## My Custom List
+https://raw.githubusercontent.com/OstrichBot/pihole/master/HOSTS
+
+## Someonewhocares | https://someonewhocares.org/hosts/
+https://someonewhocares.org/hosts/zero/hosts
+
+## mvps.org | 14k domains
+http://winhelp2002.mvps.org/hosts.txt
+
+## EasyList / EasyPrivacy -- Hosted by firebot
+https://v.firebog.net/hosts/Easylist.txt
+https://v.firebog.net/hosts/Easyprivacy.txt
 
 ## add.* lists | https://github.com/FadeMind/hosts.extras
 https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts
@@ -15,40 +25,41 @@ https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts
 https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts
 https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts
 
-## Badd Boyz Hosts | https://github.com/mitchellkrogza/Badd-Boyz-Hosts
-https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts
+## yoyo.org | https://pgl.yoyo.org/adservers/
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0
 
 ## AdGuard
 https://justdomains.github.io/blocklists/lists/adguarddns-justdomains.txt
 
-## Someonewhocares | https://someonewhocares.org/hosts/
-https://someonewhocares.org/hosts/zero/hosts
-
-## lightswitch05 | https://github.com/lightswitch05/hosts
-https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt
-
 ## UncheckyAds | https://github.com/FadeMind/hosts.extras
 https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts
 
-## KADhosts | https://github.com/azet12/KADhosts
-https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt
-
 ## AdAway | https://adaway.org/
 https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
-
-## dshield.org | 21.6k domains
-https://www.dshield.org/feeds/suspiciousdomains_Low.txt
-https://www.dshield.org/feeds/suspiciousdomains_Medium.txt
-https://www.dshield.org/feeds/suspiciousdomains_High.txt
 
 ## Prigent -- Hosted by firebog
 https://v.firebog.net/hosts/Prigent-Ads.txt
 https://v.firebog.net/hosts/Prigent-Malware.txt
 https://v.firebog.net/hosts/Prigent-Phishing.txt
 
-## EasyList / EasyPrivacy -- Hosted by firebot
-https://v.firebog.net/hosts/Easylist.txt
-https://v.firebog.net/hosts/Easyprivacy.txt
+## Disconnect.me Tracking
+https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+
+## dshield.org | 21.6k domains
+https://www.dshield.org/feeds/suspiciousdomains_Low.txt
+https://www.dshield.org/feeds/suspiciousdomains_Medium.txt
+https://www.dshield.org/feeds/suspiciousdomains_High.txt
+
+## Malware Domain List | https://www.malwaredomainlist.com/
+https://www.malwaredomainlist.com/hostslist/hosts.txt
+
+## Badd Boyz Hosts | https://github.com/mitchellkrogza/Badd-Boyz-Hosts
+https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts
+
+## lightswitch05 | https://github.com/lightswitch05/hosts
+https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt
 
 ## Squidblacklist | 99k domains | https://www.squidblacklist.org/downloads.html | FREE!
 https://www.squidblacklist.org/downloads/dg-ads.acl
@@ -59,48 +70,15 @@ https://www.squidblacklist.org/downloads/dg-malicious.acl
 https://dnsbl.karelvanhecke.com/openphish_30d.txt
 https://dnsbl.karelvanhecke.com/phishtank.txt
 
-## Abuse.ch | https://abuse.ch/ | 3k domains
-https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
-https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt
-https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt
-https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt
-https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt
-https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
-https://zeustracker.abuse.ch/blocklist.php?download=baddomains
-https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
-
-## Host-files.net | https://hosts-file.net/?s=classifications
-https://hosts-file.net/emd.txt 
-https://hosts-file.net/exp.txt
-https://hosts-file.net/ats.txt
-https://hosts-file.net/psh.txt
-
 ## MalwareDomains | 26k domains
 https://mirror1.malwaredomains.com/files/justdomains
 
 ## https://www.malwaredomainlist.com/
 https://www.malwaredomainlist.com/hostslist/hosts.txt 
 
-## mvps.org | 14k domains
-http://winhelp2002.mvps.org/hosts.txt
-
-## Steven Black's ad-hoc list | https://github.com/StevenBlack/hosts
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts
-
-## Disconnect.me Tracking
-https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
-
 ## Quids | https://gitlab.com/quidsup/notrack-blocklists/
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
-
-## FireBog Hosted | https://firebog.net/
-https://v.firebog.net/hosts/AdguardDNS.txt
-https://v.firebog.net/hosts/Shalla-mal.txt
-https://v.firebog.net/hosts/static/w3kbl.txt
-https://v.firebog.net/hosts/Cybercrime.txt
 
 ## CryptoCoin Blocking
 https://zerodot1.gitlab.io/CoinBlockerLists/hosts
@@ -111,11 +89,24 @@ https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/hosts
 https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
 https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt
 
-## Various Adult Content Lists
-https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts
-https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts
-https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts
-#https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
+## FireBog Hosted | https://firebog.net/
+https://v.firebog.net/hosts/AdguardDNS.txt
+#https://v.firebog.net/hosts/Shalla-mal.txt
+#https://v.firebog.net/hosts/static/w3kbl.txt
+#https://v.firebog.net/hosts/Cybercrime.txt
 
-## My Custom List
-https://raw.githubusercontent.com/OstrichBot/pihole/master/HOSTS
+## Abuse.ch | https://abuse.ch/ | 3k domains
+#https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
+#https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt
+#https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt
+#https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt
+#https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt
+#https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
+#https://zeustracker.abuse.ch/blocklist.php?download=baddomains
+#https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
+
+## Host-files.net | https://hosts-file.net/?s=classifications
+#https://hosts-file.net/emd.txt 
+#https://hosts-file.net/exp.txt
+#https://hosts-file.net/ats.txt
+#https://hosts-file.net/psh.txt
