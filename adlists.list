@@ -76,6 +76,16 @@ https://mirror1.malwaredomains.com/files/justdomains
 ## https://www.malwaredomainlist.com/
 https://www.malwaredomainlist.com/hostslist/hosts.txt 
 
+## Abuse.ch | https://abuse.ch/ | 3k domains
+https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
+https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt
+https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt
+https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt
+https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt
+https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
+https://zeustracker.abuse.ch/blocklist.php?download=baddomains
+https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
+
 ## Quids | https://gitlab.com/quidsup/notrack-blocklists/
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
@@ -94,16 +104,6 @@ https://v.firebog.net/hosts/AdguardDNS.txt
 #https://v.firebog.net/hosts/Shalla-mal.txt
 #https://v.firebog.net/hosts/static/w3kbl.txt
 #https://v.firebog.net/hosts/Cybercrime.txt
-
-## Abuse.ch | https://abuse.ch/ | 3k domains
-#https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
-#https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt
-#https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt
-#https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt
-#https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt
-#https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
-#https://zeustracker.abuse.ch/blocklist.php?download=baddomains
-#https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
 
 ## Host-files.net | https://hosts-file.net/?s=classifications
 #https://hosts-file.net/emd.txt 
