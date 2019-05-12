@@ -2,6 +2,7 @@
 img.purch.com
 
 ## Amazon Services
+amazonaws.com
 kinesis.us-east-1.amazonaws.com
 device-metrics-us.amazon.com
 device-metrics-us-2.amazon.com
@@ -11,6 +12,9 @@ mas-ssr.amazon.com
 fls-na.amazon.com
 
 ## Apple
+apple.com
+aaplimg.com
+apple-dns.net
 itunes.apple.com
 appleid.apple.com
 ocsp.apple.com
@@ -26,6 +30,7 @@ clients3.google.com
 clients2.google.com
 android.clients.google.com
 dl.google.com
+play.google.com
 app-measurement.com
 
 ## MS Products
@@ -111,6 +116,13 @@ secure.netflix.com
 # Bicycle Sites
 road.cc
 off.road.cc
+
+# CDN Networks
+cloudfront.net
+akadns.net
+akamaiedge.net
+edgekey.net
+fastly.net
 
 ## Misc
 s1.wp.com
