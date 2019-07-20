@@ -9,10 +9,10 @@
 ## Block Top Shady TLDs
 ^.*(loan|work|gq|cf|ga|ml|world|organic|date|country|stream|download|xin|gdn|racing|jetzt|win|bid|vip|ren|kim|mom|party|review|trade|accountants|top)$
 
-## Block other TLDs
+## Block other Shady TLDs
 ^.*(xyz|club|online|support|asia|stream|bid|review)$
 
-## Mmotti's List| Ref: https://github.com/mmotti/pihole-regex
+## Mmotti's List | Trackers, Ads, etc | Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??adse?rv(er?|ice)?s?[0-9]*[-.]
 ^(.+[-_.])??m?ad[sxv]?[0-9]*[-_.]
 ^(.+[-_.])??telemetry[-.]
@@ -30,9 +30,6 @@
 ^track(ers?|ing)?[0-9]*[-.]
 ^traff(ic)?[-.]
 
-## g00-adware-insertion filter | disruptive
-#\.g00\.
-
 ## Block Redirectors
 ^.*(bit.ly|bit.do|ow.ly|goo.gl|x.co|rebrand.ly|tinyurl.com|t.co|is.gd|ht.ly)$
 
@@ -44,6 +41,9 @@
 
 ## Block Advertisers | Based on PrivacyBadger Extracts
 ^.*(openx.net|(fls|g).doubleclick.net|tt.omtrdc.net|freshdesk.com|amazon-adsystem.com|pubmatic.com|demdex.net|rubiconproject.com|leadpages.co|v.fwmrm.net|myshopify.com|adnxs.com|addthis.com|sharethis.com|salesforceliveagent.com|quantserve.com|bigcommerce.com|imrworldwide.com)$
+
+## g00-adware-insertion filter | disruptive
+#\.g00\.
 
 ## Social Media
 #^.*(facebook.com|fbcdn.net|fb.me|fbsbx.com)$
