@@ -15,6 +15,7 @@
 ## Mmotti's List| Ref: https://github.com/mmotti/pihole-regex
 ^(.+[-_.])??adse?rv(er?|ice)?s?[0-9]*[-.]
 ^(.+[-_.])??m?ad[sxv]?[0-9]*[-_.]
+^(.+[-_.])??telemetry[-.]
 ^(.+[-_.])??xn--
 ^adim(age|g)s?[0-9]*[-_.]
 ^adtrack(er|ing)?[0-9]*[-.]
@@ -26,7 +27,6 @@
 ^count(ers?)?[0-9]*[-.]
 ^pixels?[-.]
 ^stat(s|istics)?[0-9]*[-.]
-^telemetry[-.]
 ^track(ers?|ing)?[0-9]*[-.]
 ^traff(ic)?[-.]
 
