@@ -1,0 +1,22 @@
+# https://linux.die.net/man/8/logrotate
+/var/log/pihole.log {
+        su root syslog
+        daily
+        copytruncate
+        rotate 14
+        dateext
+        nocompress
+        notifempty
+        nomail
+}
+
+/var/log/pihole-FTL.log {
+        su root syslog
+        weekly
+        copytruncate
+        rotate 3
+        compress
+        delaycompress
+        notifempty
+        nomail
+}
