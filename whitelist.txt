@@ -9,7 +9,9 @@ device-metrics-us-2.amazon.com
 mas-ext.amazon.com
 mas-sdk.amazon.com
 mas-ssr.amazon.com
+mas-ssr-ad.amazon.com
 fls-na.amazon.com
+
 
 ## Apple
 apple.com
