@@ -11,7 +11,8 @@ mas-sdk.amazon.com
 mas-ssr.amazon.com
 mas-ssr-ad.amazon.com
 fls-na.amazon.com
-
+settings.crashlytics.com
+reports.crashlytics.com
 
 ## Apple
 apple.com
