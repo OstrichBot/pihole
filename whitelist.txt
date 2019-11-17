@@ -48,6 +48,9 @@ displaycatalog.mp.microsoft.com
 ## https://support.microsoft.com/en-us/help/3068708/update-for-customer-experience-and-diagnostic-telemetry
 vortex-win.data.microsoft.com
 settings-win.data.microsoft.com
+vortex.data.microsoft.com
+self.events.data.microsoft.com
+web.vortex.data.microsoft.com
 
 # Nvidia updates
 ota-downloads.nvidia.com
