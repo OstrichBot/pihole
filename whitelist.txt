@@ -52,6 +52,10 @@ vortex.data.microsoft.com
 self.events.data.microsoft.com
 web.vortex.data.microsoft.com
 
+## Minecraft Telemetry
+gate.hockeyapp.net
+t.appsflyer.com
+
 # Nvidia updates
 ota-downloads.nvidia.com
 
